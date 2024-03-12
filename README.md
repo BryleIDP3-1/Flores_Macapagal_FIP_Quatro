@@ -1,5 +1,5 @@
-# Flores_Macapagal_FIP_Quatro :grapes: :strawberry: :orange: :green_apple:
-This is the repository of Bryle and Bernardo for the Final Integrated Project of the Winter 2024 Term of IDP, where we are developing a brand refresh for Quatro.
+# Quatro Brand Refresh :grapes: :strawberry: :orange: :green_apple:
+This is the repository of Bryle and Bernardo for the Final Integrated Project of the Winter 2024 Term of IDP, where we are developing a brand refresh for Quatro. This includes creating an updated brand design, developing a new website, and creating media for the promotion of all products. Thanks for stopping by!
 
 ## Installation :wrench:
 
@@ -18,7 +18,9 @@ Download the zipped code folder or fork the cloned repository to open the full f
 5. Submit a pull request :D
 
 ## History :clock8:
-**Created on March 11, 2023**
+**Created on March 11, 2024**
+
+- March 12, 2024
 
 ## Credits :writing_hand:
 __Officially Published by:__
