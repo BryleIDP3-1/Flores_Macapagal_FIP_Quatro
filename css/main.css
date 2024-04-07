@@ -4,3 +4,57 @@
 .hidden {
     display: none;
 }
+
+.product-style{
+    height: 150px;
+}
+
+
+
+#blueberry, #peachy, #apple, #scarlet {
+    position: relative;
+    margin-left: 50px;
+}
+
+.info-icon{
+    position: absolute;
+    top: -5px;
+    right: -70px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.lightbox.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active .lightbox-content {
+    background-color: white; /* Adjust as needed */
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.lightbox.active .lightbox-close {
+    position: absolute;
+    top: 200px; 
+    right: 280px;
+    /* top: 250px;
+    right: 580px;  */
+    /* Adjust the right value to move the close button closer to the lightbox text */
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+}
+.lightbox.active h2, .lightbox.active p {
+    text-align: center;
+}
