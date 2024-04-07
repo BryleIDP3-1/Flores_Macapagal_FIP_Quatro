@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Array to store clicked button information
+    var clickedButtonsInfo = [];
+
     // Get all the info icons
     var infoIcons = document.querySelectorAll('.info-icon');
     
@@ -17,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log("Product Name:", productName);
             console.log("Product Description:", productDescription);
             
+            // Store clicked button information in the array
+            clickedButtonsInfo.push({
+                productName: productName,
+                productDescription: productDescription,
+                productAdditionalInfo: productAdditionalInfo
+            });
+
             // Create HTML content for the lightbox
             var lightboxContent = `
                 <div class="lightbox active">
