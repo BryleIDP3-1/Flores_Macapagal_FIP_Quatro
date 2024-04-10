@@ -1,13 +1,56 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 .hidden {
     display: none;
 }
 
+
 .product-style{
     height: 150px;
 }
+
+
+#logo {
+    width: 200px;
+}
+
+#nav {
+    background-color: blueviolet;
+    height: 144px;
+}
+
+#hero-banner {
+    background-color: rgb(106, 29, 179);
+    height: 470px;
+}
+
+#nav-menu {
+    display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;  
+}
+
+
+nav ul li a{
+    margin: 0 10px;  
+    text-decoration: none;
+    color: white; /* Set the color to white */
+    font-family: 'Poppins';
+}
+
 
 
 
@@ -16,6 +59,7 @@
     margin-left: 50px;
 }
 
+
 .info-icon{
     position: absolute;
     top: -5px;
@@ -23,6 +67,7 @@
     height: 35px;
     cursor: pointer;
 }
+
 
 .lightbox.active {
     width: 100%;
@@ -37,6 +82,7 @@
     align-items: center;
 }
 
+
 .lightbox.active .lightbox-content {
     background-color: white; /* Adjust as needed */
     padding: 20px;
@@ -47,9 +93,10 @@
     text-align: center;
 }
 
+
 .lightbox.active .lightbox-close {
     position: absolute;
-    top: 200px; 
+    top: 200px;
     right: 280px;
     /* top: 250px;
     right: 580px;  */
@@ -61,6 +108,8 @@
 .lightbox.active h2, .lightbox.active p {
     text-align: center;
 }
+
+
 
 
 .open-reward {
@@ -76,3 +125,6 @@
     font-size: 20px;
     background-color: orange;
 }
+
+
+
