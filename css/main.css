@@ -12,13 +12,34 @@
 }
 
 
-#logo {
+#logo img {
     width: 200px;
 }
 
-#nav {
+
+#nav-con {
     background-color: blueviolet;
     height: 144px;
+}
+
+
+
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#main-nav ul li {
+    margin: 0 10px;  
+}
+
+
+#main-nav ul li a{
+    margin: 0 10px;  
+    text-decoration: none;
+    color: white;
+    /* font-family: 'Poppins'; */
 }
 
 #hero-banner {
@@ -26,32 +47,198 @@
     height: 470px;
 }
 
-#nav-menu {
+#features {
+    height: 380px;
+    background-color: beige;
     display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#about-quatro {
+    height: 450px;
+    background-color: rgb(234, 234, 204);
 }
 
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+#product-title {
+    background-color: green;
+    height: 235px;
     display: flex;
-}
-nav ul li {
-    margin: 0 10px;  
-}
-
-
-nav ul li a{
-    margin: 0 10px;  
-    text-decoration: none;
-    color: white; /* Set the color to white */
-    font-family: 'Poppins';
+    justify-content: center;
+    text-align: center;
 }
 
+#products {
+    height: 380px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
 
+#quatro-history {
+    height: 450px;
+    background-color: rgb(234, 234, 204);
+}
+
+#quote {
+    background-color: rgb(255, 123, 0);
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#follow-us-button {
+    background-color: red;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#follow-us {
+    background-color: rgb(234, 234, 204);
+}
+
+#merch-con {
+    background-color: beige;
+}
+
+#merch-button {
+    background-color: rgb(255, 123, 0);
+    text-align: center;
+    border-radius: 15px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+#gallery img {
+    height: 300px;
+    background-color: blueviolet;
+    padding: 50px 0 50px 0;
+    margin: 10px 10px 10px 10px;
+}
+
+#merch-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+#merch-gallery img {
+    height: 300px;
+    background-color: blueviolet;
+    padding: 50px 0 50px 0;
+    margin: 10px 10px 10px 10px;
+}
+
+#ceo-message {
+    text-align: center;
+  }
+
+#ceo-message-con {
+    background-color: beige;
+}
+  
+#ceo-message div {
+    margin-bottom: 20px; /* Add spacing between the text and video */
+  }
+
+#available-con {
+    text-align: center;
+  }
+
+#available-con {
+    background-color: beige;
+}
+  
+
+  
+  
+  #video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    height: 300px;
+  }
+
+#reviews-con {
+    background-color: red;
+    text-align: center; /* Align center */
+}
+
+#reviews-wrapper {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+#reviews {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+   
+}
+
+#reviews > div {
+    
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    text-align: center; /* Align content center */
+}
+
+
+#newsletter-con {
+    background-color: green; /* Adjust background color as needed */
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#newsletter-con form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-con {
+    background-color: purple;
+}
+
+#logo-footer, #logo-socmed, #footer-menu, #footer-service {
+    padding: 20px;
+}
+
+#logo-footer, #logo-socmed {
+    background-color: beige;
+}
+
+#footer-menu, #footer-service {
+    background-color: lightblue;
+}
+
+#credits {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* JAVASCRIPT LIGHTBOX TEST */
 
 
 #blueberry, #peachy, #apple, #scarlet {

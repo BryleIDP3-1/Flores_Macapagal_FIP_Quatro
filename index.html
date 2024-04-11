@@ -27,12 +27,14 @@
 <body>
     <h1 class="hidden">Quatro's Home</h1>
 
-
-    <header id="nav" class="full-width-grid-con">
+    <div id="nav-con">
+    <header class="grid-con">
     <h2 class="hidden">Navigation Bar</h2>
-        <div class="grid-con nav-menu">
-        <img id="logo" alt="Main Logo">
-        <nav>
+        
+        <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+        <img src="images/quatro_logo.svg" alt="Main Logo">
+        </div>
+        <nav id="main-nav" class="col-span-full m-col-start-7 m-col-end-11">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -40,18 +42,18 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        </div>
+     
     </header>
+    </div>
 
 
     <section id="hero-banner" class="full-width-grid-con">
         <h2 class="hidden">Hero Banner</h2>
         <img src="images/hero_image.png" alt="Hero Banner">
     </section>
+
     <section id="features" class="grid-con">
     <h2 class="hidden">Features</h2>
-
-
         <div>
             <img src="images/red_berries.svg" alt="Red Berries">
             <h3>Natural Flavors</h3>
@@ -80,14 +82,35 @@
         </div>
     </section>
 
+    <section id="about-quatro" class="grid-con">
+        <h2 class="hidden">About Quatro</h2>
+    
+    <div class="col-span-full m-col-span-full l-col-start-4 l-col-end-5">
+        <img src="images/man-orange-can.jpg" alt="Man Holding Orange Can">
+    </div>
 
-    <section class="grid-con">
-    <h2 class="hidden">Products</h2>
+    <div class="col-span-full m-col-span-full l-col-start-6 l-col-end-10">
+        <h3>What's Quatro</h3>
+        <p>Quatro, the innovative fizzy fruity beverage, hails from London, Ontario, where it captures the essence of the city's vibrant spirit and blends it into every sip. With its refreshing flavors and creative twist, Quatro is quickly becoming a beloved choice for those seeking a delightful beverage experience.</p>
+    </div>
+
+    </section>
+
+
+    <section id="product-title" class="full-width-grid-con">
+    <h2 class="hidden">Products Title</h2>
+        <div>
+            <img src="apple-icon.svg" alt="Green Apple Icon">
+        </div>
         <div>
             <h2>Our Delicious Drinks</h2>
         </div>
+        <div>
+            <img src="apple-icon.svg" alt="Green Apple Icon">
+        </div>
+    </section>
 
-
+    <section id="products" class="grid-con">
         <div>
             <img src="images/purple_product_box.svg" alt="Blueberry Crush Drink">
             <h3>Blueberry Crush</h3>
@@ -120,41 +143,87 @@
         </div>
     </section>
 
+    <section id="quatro-history" class="grid-con">
+        <h2 class="hidden">Quatro's History</h2>
+    <div class="col-span-full m-col-span-full l-col-start-4 l-col-end-7">
+            <h3>Quatro's History</h3>
+            <p>Our beverage company and drink products were originally released in 1982, supplying the community with flavorful drinks. However, our parent company Coca-Cola, discontinued our brand line in the early 90s.</p>
+    </div>
 
-    <section class="grid-con">
+    <div class="col-span-full m-col-span-full l-col-start-7 l-col-end-10">
+        <img src="images/quatro-old-products.jpg" alt="Quatro's Old Products">
+    </div>
+
+    
+
+    </section>
+
+
+    <section id="quote" class="full-width-grid-con">
     <h2 class="hidden">Quote</h2>
+        <div>
+            <img src="orange-pattern.svg" alt="Orange Pattern">
+         </div>
         <div>
             <h3>"An Explosion of Flavor in your Mouth"</h3>
             <p>- Benjamin Cortez, 2024</p>
         </div>
+        <div>
+            <img src="orange-pattern.svg" alt="Orange Pattern">
+         </div>
     </section>
 
 
-    <section class="grid-con">
-    <h2 class="hidden">Gallery</h2>
-
-
-        <div>
+    <section id="follow-us" class="grid-con">
+        <h2 class="hidden">Gallery</h2>
+    
+        <div id="follow-us-button" class="col-span-full m-col-start-4 m-col-end-10">
             <h2>Follow Us @Quatro</h2>
         </div>
-
-
-        <div>
-        <img src="images/gallery_photo_1.png" alt="Purple Man Having Fun">
-        <img src="images/gallery_photo_2.png" alt="Red Two Friends with Balloons">
-        <img src="images/gallery_photo_3.png" alt="Blue Three Friends Gaming">
-        <img src="images/gallery_photo_4.png" alt="Yellow Woman Eating an Orange">
-        <img src="images/gallery_photo_5.png" alt="Green Man with Kiwis">
+    
+        <div id="gallery" class="col-span-full m-col-span-full">
+            <div id="gallery-row1">
+                <img src="images/gallery_photo_1.png" alt="Purple Man Having Fun">
+                <img src="images/gallery_photo_2.png" alt="Red Two Friends with Balloons">
+                <img src="images/gallery_photo_3.png" alt="Blue Three Friends Gaming">
+                <img src="images/gallery_photo_4.png" alt="Yellow Woman Eating an Orange">
+                <img src="images/gallery_photo_5.png" alt="Green Man with Kiwis">
+            </div>
+            <div id="gallery-row2">
+                <img src="images/gallery_photo_6.png" alt="Purple Man Having Fun">
+                <img src="images/gallery_photo_7.png" alt="Red Two Friends with Balloons">
+                <img src="images/gallery_photo_8.png" alt="Blue Three Friends Gaming">
+                <img src="images/gallery_photo_9.png" alt="Yellow Woman Eating an Orange">
+                <img src="images/gallery_photo_10.png" alt="Green Man with Kiwis">
+            </div>
         </div>
     </section>
 
 
-    <section class="grid-con">
+<section id="ceo-message-con" class="grid-con">
+    <h2 class="hidden">Quote</h2>
+
+        <div id="ceo-message" class="col-span-full m-col-start-4 m-col-end-10">
+            <h3>"A Message From Our CEO"</h3>
+            <p>As the CEO of Quatro, I'm thrilled to introduce our innovative flavored drink to the world. Crafted with passion and dedication, Quatro promises a delightful fusion of flavors that will elevate your taste experience. Cheers to a refreshing journey ahead with Quatro!</p>
+            <h4>Ryan Johnson <span>President of Quatro</span></h4>
+        </div>
+ 
+        <div id="video" class="col-span-full m-col-start-4 m-col-end-10">
+            <h3>Video Here</h3>
+            <button>Play</button>
+         </div>
+    </section>
+
+    <section id="reviews-con" class="full-width-grid-con">
     <h2 class="hidden">Reviews</h2>
-        <div>
+    <div id="reviews-title" class="col-span-full m-col-span-full">
         <h2>Customer Reviews</h2>
+        <p>From the ones who loved our Quatro</p>
+    </div>
+   
 
-
+        <div id="reviews">
             <div>
                 <p>“Why was this drink created, I now have an addiction to fruits, flavor, and fizzy fun goodness. You guys should make more.”</p>
                 <img src="images/five_stars.svg" alt="Five Yellow Stars">
@@ -194,14 +263,16 @@
     </section>
 
 
-    <section class="grid-con">
+    <section id="merch-con" class="grid-con">
     <h2 class="hidden">Merchandise</h2>
-   
-            <div>
+
+            <div id="merch-button" class="col-span-full m-col-start-4 m-col-end-10">
                 <h2>Buy Fresh Merch!</h2>
             </div>
 
 
+            
+            <div id="merch-gallery" class="col-span-full m-col-span-full">
             <div>
                 <img src="images/purple_shirt.png" alt="Purple Quatro Shirt">
                 <h3>Sweet Shirt</h3>
@@ -232,9 +303,22 @@
                 <p>Play the game with frisbee frenzy.</p>
                 <button>Buy Now</button>
             </div>
+        </div>
     </section>
+
+    <section id="available-con" class="grid-con">
+        <h2 class="hidden">Quote</h2>
+    
+            <div id="available-title" class="col-span-full m-col-start-4 m-col-end-10">
+                <h3>Quatro Available Now At</h3>
+                <img src="images/logo_loblaws.png" alt="Loblaws Logo">
+                <img src="images/logo_circleK.png" alt="Circle K Logo">
+                <img src="images/logo_walmart.png" alt="Walmart Logo">
+            </div>
+     
+        </section>
    
-    <section class="grid-con">
+    <section id="newsletter-con" class="full-width-grid-con">
     <h2 class="hidden">Newsletter</h2>
    
             <div>
@@ -245,24 +329,23 @@
                 </form>
             </div>
 
-
     </section>
 
 
-    <footer class="grid-con">
-    <h2 class="hidden">Footer</h2>
-
-
-        <img src="images/main_logo.svg" alt="Main Logo">
-
-
-        <img src="images/facebook.svg" alt="Facebook Icon">
-        <img src="images/snapchat.svg" alt="Snapchat Icon">
-        <img src="images/twitter.svg" alt="Twitter Icon">
-        <img src="images/youtube.svg" alt="Youtube Icon">
-
-
-        <nav>
+    <footer id="footer-con" class="grid-con">
+        <h2 class="hidden">Footer</h2>
+    
+        <div id="logo-footer" class="col-span-full m-col-start-2 m-col-end-4 l-col-start-2 l-col-end-5">
+            <img src="images/main_logo.svg" alt="Main Logo">
+        </div>
+        <div id="logo-socmed" class="col-span-full m-col-start-2 m-col-end-4 l-col-start-2 l-col-end-5">
+            <img src="images/facebook.svg" alt="Facebook Icon">
+            <img src="images/snapchat.svg" alt="Snapchat Icon">
+            <img src="images/twitter.svg" alt="Twitter Icon">
+            <img src="images/youtube.svg" alt="Youtube Icon">
+        </div>
+    
+        <nav id="footer-menu" class="col-span-full l-col-start-6 l-col-end-8">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -270,9 +353,8 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-
-        <nav>
+    
+        <nav id="footer-service" class="col-span-full l-col-start-8 l-col-end-10">
             <ul>
                 <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -280,9 +362,10 @@
                 <li><a href="#">Careers</a></li>
             </ul>
         </nav>
-
-
-        <p>Copyright &#169; 2024 Quatro Official.</p>
+    
+        <div id="credits" class="col-span-full m-col-span-full">
+            <p>Copyright &#169; 2024 Quatro Official.</p>
+        </div>
     </footer>
 </body>
 </html>
