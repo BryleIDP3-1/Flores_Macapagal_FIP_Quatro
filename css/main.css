@@ -22,6 +22,8 @@ body {
 
 /* HOMEPAGE STYLING */
 
+/* Navigation Section */
+
 #logo img {
     width: 200px;
 }
@@ -48,6 +50,7 @@ body {
     color: white;
 }
 
+/* Hero Banner Section */
 
 #hero-banner {
     background-color: #6D0F9B;
@@ -55,6 +58,8 @@ body {
     background-size: cover;
     height: 529px;
 }
+
+/* Features Section */
 
 #features {
     height: 100px;
@@ -70,10 +75,14 @@ body {
     letter-spacing: 1px;
 }
 
+/* What's Quatro Section */
+
 #about-quatro {
     height: 450px;
     background-color: rgb(234, 234, 204);
 }
+
+/* Products Home Section */
 
 #product-title {
     background-color: green;
@@ -91,10 +100,14 @@ body {
     padding-top: 30px;
 }
 
+/* Quatro's History Section */
+
 #quatro-history {
     height: 450px;
     background-color: rgb(234, 234, 204);
 }
+
+/* Quote Section */
 
 #quote {
     background-color: rgb(255, 123, 0);
@@ -104,6 +117,8 @@ body {
     text-align: center;
 }
 
+/* Gallery Section */
+
 #follow-us-button {
     background-color: red;
     text-align: center;
@@ -112,16 +127,6 @@ body {
 
 #follow-us {
     background-color: rgb(234, 234, 204);
-}
-
-#merch-con {
-    background-color: beige;
-}
-
-#merch-button {
-    background-color: rgb(255, 123, 0);
-    text-align: center;
-    border-radius: 15px;
 }
 
 #gallery {
@@ -137,18 +142,7 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
-#merch-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-#merch-gallery img {
-    height: 300px;
-    background-color: blueviolet;
-    padding: 50px 0 50px 0;
-    margin: 10px 10px 10px 10px;
-}
+/* Merchandise Section */
 
 #ceo-message {
     text-align: center;
@@ -162,14 +156,6 @@ body {
     margin-bottom: 20px; /* Add spacing between the text and video */
   }
 
-#available-con {
-    text-align: center;
-  }
-
-#available-con {
-    background-color: beige;
-}
- 
 #video {
     display: flex;
     flex-direction: column;
@@ -178,6 +164,8 @@ body {
     background-color: purple;
     height: 300px;
   }
+
+/* Customer Reviews Section */
 
 #reviews-con {
     background-color: red;
@@ -196,7 +184,6 @@ body {
 }
 
 #reviews > div {
-   
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -204,6 +191,43 @@ body {
     width: 220px;
     text-align: center; /* Align content center */
 }
+
+/* Merch Section */
+
+#merch-con {
+    background-color: beige;
+} 
+
+#merch-button {
+    background-color: rgb(255, 123, 0);
+    text-align: center;
+    border-radius: 15px;
+}
+
+#merch-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+#merch-gallery img {
+    height: 300px;
+    background-color: blueviolet;
+    padding: 50px 0 50px 0;
+    margin: 10px 10px 10px 10px;
+}
+
+/* Available Stores Section */
+
+#available-con {
+    text-align: center;
+  }
+
+#available-con {
+    background-color: beige;
+}
+
+/* Newsletter Section */
 
 #newsletter-con {
     background-color: green; /* Adjust background color as needed */
@@ -218,6 +242,8 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+/* Footer Section */
 
 #footer-con {
     background-color: purple;
@@ -247,13 +273,11 @@ body {
     padding-top: 100px;
 }
 
-
 #product-grape {
     background-color: rgb(114, 29, 195);
     height: 950px;
     display: flex;
 }
-
 
 #product-strawberry {
     background-color: #CC173A;
@@ -261,13 +285,11 @@ body {
     display: flex;
 }
 
-
 #product-apple {
     background-color: #329B13;
     height: 950px;
     display: flex;
 }
-
 
 #product-orange {
     background-color:#F26200;
@@ -319,11 +341,11 @@ body {
     width: 60%;
  }
  
- #contact-form-con textarea {
+#contact-form-con textarea {
     height: 250px;
  }
  
- #contact-form-con input[type="submit"] {
+#contact-form-con input[type="submit"] {
     padding: 12px 28px;
     background: #721AAE;
     color: #fff;
@@ -333,12 +355,12 @@ body {
     align-self: flex-end;
  }
  
- #contact-hero-form input[type="submit"]:hover {
+#contact-hero-form input[type="submit"]:hover {
     background-color: #A44CE1;
     border-radius: 0;
  }
 
- .input-group {
+.input-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
