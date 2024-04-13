@@ -24,11 +24,6 @@ body {
 /* Confirmed Font Allow */
 
 
-.product-style{
-    height: 680px;
-    padding-top: 100px;
-}
-
 
 
 
@@ -301,6 +296,11 @@ body {
 
 /* PRODUCT PAGE */
 
+.product-style{
+    height: 680px;
+    padding-top: 100px;
+}
+
 
 #product-grape {
     background-color: rgb(114, 29, 195);
@@ -422,17 +422,6 @@ body {
 }
 
 
-
-
-
-
-.info-icon{
-    position: absolute;
-    top: -5px;
-    right: -70px;
-    height: 35px;
-    cursor: pointer;
-}
 
 
 
