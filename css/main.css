@@ -58,9 +58,9 @@ header {
 
 /* Hero Banner Section */
 
-#hero-banner {
+.hero-home {
     background-color: #6D0F9B;
-    background-image: url('images/home_header_412.png');
+    background-image: url('../images/home_header_412.png');
     background-size: cover;
     height: 529px;
 }
@@ -77,8 +77,17 @@ header {
 
 #features h3 {
     font-family: "Stopbuck", sans-serif;
-    font-size: 47px;
+    font-size: 32px;
     letter-spacing: 1px;
+}
+
+#features p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.feature_icon {
+    width: 105px;
 }
 
 /* What's Quatro Section */
@@ -91,15 +100,18 @@ header {
 /* Products Home Section */
 
 #product-title {
-    background-color: green;
-    height: 235px;
+    background-image: url('../images/drinks_bg_412.png');
+    background-color: #329B13;
+    background-size: cover;
+    height: 81px;
+
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
 #products {
-    height: 380px;
+    height: 300px;
     background-color: beige;
     display: flex;
     justify-content: center;
@@ -116,8 +128,11 @@ header {
 /* Quote Section */
 
 #quote {
-    background-color: rgb(255, 123, 0);
-    height: 335px;
+    background-image: url('../images/quote_bg_412.png');
+    background-color: #F26200;
+    background-size: cover;
+    height: 437px;
+
     display: flex;
     justify-content: center;
     text-align: center;
@@ -174,8 +189,11 @@ header {
 /* Customer Reviews Section */
 
 #reviews-con {
-    background-color: red;
-    text-align: center; /* Align center */
+    background-image: url('../images/review_bg_412.png');
+    background-color: #CC173A;
+    background-size: cover;
+    height: 363px;
+    text-align: center;
 }
 
 #reviews-wrapper {
@@ -236,8 +254,11 @@ header {
 /* Newsletter Section */
 
 #newsletter-con {
-    background-color: green; /* Adjust background color as needed */
-    height: 200px; /* Adjust height as needed */
+    background-image: url('../images/news_bg_412.png');
+    background-color: #0E9B22;
+    background-size: cover;
+    height: 437px;
+
     display: flex;
     justify-content: center;
     text-align: center;
@@ -252,7 +273,7 @@ header {
 /* Footer Section */
 
 #footer-con {
-    background-color: purple;
+    background-color: #651799;
 }
 
 #logo-footer, #logo-socmed, #footer-menu, #footer-service {
@@ -427,10 +448,9 @@ header {
 /* REWARD POP-OVER */
 
 .open-reward {
-    z-index: 90000;
+    z-index: 999;
     position: fixed;
     filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 0px 30px);
-    /* right: 0; */
     bottom: 0;
     left: 0px;
     margin: 0px 20px;
@@ -438,4 +458,7 @@ header {
     cursor: pointer;
     font-size: 20px;
     background-color: orange;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #363636;
 }
