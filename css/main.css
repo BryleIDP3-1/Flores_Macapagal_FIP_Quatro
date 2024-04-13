@@ -84,6 +84,12 @@ body {
 }
 
 
+#hero-banner-contact {
+    background-color: rgb(106, 29, 179);
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
