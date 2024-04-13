@@ -1,15 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
+/* BASE STYLING */
 
 .hidden {
     display: none;
 }
 
-
-/* Confirmed Font Allow */
 body {
     font-family: "Poppins", sans-serif;
     color: #363636;
@@ -21,19 +18,13 @@ body {
     src: url('fonts/stopbuck.otf') format('opentype'),
          url('fonts/stopbuck.ttf') format('truetype');
 }
-/* Confirmed Font Allow */
 
 
-
-
+/* HOMEPAGE STYLING */
 
 #logo img {
     width: 200px;
 }
-
-
-
-
 
 #nav-con {
     background-color: #651799;
@@ -65,10 +56,6 @@ body {
     height: 529px;
 }
 
-
-
-
-
 #features {
     height: 100px;
     background-color: beige;
@@ -83,14 +70,10 @@ body {
     letter-spacing: 1px;
 }
 
-
 #about-quatro {
     height: 450px;
     background-color: rgb(234, 234, 204);
 }
-
-
-
 
 #product-title {
     background-color: green;
@@ -100,7 +83,6 @@ body {
     text-align: center;
 }
 
-
 #products {
     height: 380px;
     background-color: beige;
@@ -109,12 +91,10 @@ body {
     padding-top: 30px;
 }
 
-
 #quatro-history {
     height: 450px;
     background-color: rgb(234, 234, 204);
 }
-
 
 #quote {
     background-color: rgb(255, 123, 0);
@@ -124,23 +104,19 @@ body {
     text-align: center;
 }
 
-
 #follow-us-button {
     background-color: red;
     text-align: center;
     border-radius: 15px;
 }
 
-
 #follow-us {
     background-color: rgb(234, 234, 204);
 }
 
-
 #merch-con {
     background-color: beige;
 }
-
 
 #merch-button {
     background-color: rgb(255, 123, 0);
@@ -148,13 +124,11 @@ body {
     border-radius: 15px;
 }
 
-
 #gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
 
 #gallery img {
     height: 330px;
@@ -163,13 +137,11 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
-
 #merch-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
 
 #merch-gallery img {
     height: 300px;
@@ -178,11 +150,9 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
-
 #ceo-message {
     text-align: center;
   }
-
 
 #ceo-message-con {
     background-color: beige;
@@ -192,20 +162,15 @@ body {
     margin-bottom: 20px; /* Add spacing between the text and video */
   }
 
-
 #available-con {
     text-align: center;
   }
-
 
 #available-con {
     background-color: beige;
 }
  
-
-
- 
-  #video {
+#video {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,25 +179,21 @@ body {
     height: 300px;
   }
 
-
 #reviews-con {
     background-color: red;
     text-align: center; /* Align center */
 }
-
 
 #reviews-wrapper {
     overflow-x: auto; /* Allow horizontal scrolling */
     white-space: nowrap; /* Prevent wrapping */
 }
 
-
 #reviews {
     display: flex;
     justify-content: center; /* Center the items horizontally */
    
 }
-
 
 #reviews > div {
    
@@ -244,9 +205,6 @@ body {
     text-align: center; /* Align content center */
 }
 
-
-
-
 #newsletter-con {
     background-color: green; /* Adjust background color as needed */
     height: 200px; /* Adjust height as needed */
@@ -255,43 +213,31 @@ body {
     text-align: center;
 }
 
-
 #newsletter-con form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
 #footer-con {
     background-color: purple;
 }
-
 
 #logo-footer, #logo-socmed, #footer-menu, #footer-service {
     padding: 20px;
 }
 
-
 #logo-footer, #logo-socmed {
     background-color: beige;
 }
-
 
 #footer-menu, #footer-service {
     background-color: lightblue;
 }
 
-
 #credits {
     text-align: center;
 }
-
-
-
-
-
-
 
 
 /* PRODUCT PAGE */
@@ -332,11 +278,9 @@ body {
 
 /* CONTACT PAGE */
 
-
 #logo-contact img {
     width: 300px;
 }
-
 
 #subtitle-contact {
     text-align: center;
@@ -350,14 +294,12 @@ body {
     width: 200px;
 }
 
-
 #hero-banner-contact {
     background-color: rgb(106, 29, 179);
     height: 470px;
     display: flex;
     justify-content: center;
 }
-
 
 #contact-form-con {
     background-color: beige; /* Adjust background color as needed */
@@ -408,23 +350,12 @@ body {
 }
 
 
-
-
-
 /* JAVASCRIPT LIGHTBOX TEST */
-
-
-
 
 #blueberry, #peachy, #apple, #scarlet {
     position: relative;
     margin-left: 50px;
 }
-
-
-
-
-
 
 .lightbox.active {
     width: 100%;
@@ -439,9 +370,6 @@ body {
     align-items: center;
 }
 
-
-
-
 .lightbox.active .lightbox-content {
     background-color: white; /* Adjust as needed */
     padding: 20px;
@@ -451,9 +379,6 @@ body {
     height: 200px;
     text-align: center;
 }
-
-
-
 
 .lightbox.active .lightbox-close {
     position: absolute;
@@ -466,16 +391,12 @@ body {
     font-size: 3em;
     cursor: pointer;
 }
+
 .lightbox.active h2, .lightbox.active p {
     text-align: center;
 }
 
-
-
-
-
-
-
+/* REWARD POP-OVER */
 
 .open-reward {
     z-index: 90000;
@@ -490,12 +411,3 @@ body {
     font-size: 20px;
     background-color: orange;
 }
-
-
-
-
-
-
-
-
-
