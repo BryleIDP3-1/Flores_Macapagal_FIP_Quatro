@@ -14,6 +14,12 @@ body {
     font-family: "Poppins", sans-serif;
     color: #363636;
 }
+
+@font-face {
+    font-family: 'Stopbuck';
+    src: url('fonts/stopbuck.otf') format('opentype'),
+         url('fonts/stopbuck.ttf') format('truetype');
+}
 /* Confirmed Font Allow */
 
 
@@ -74,7 +80,6 @@ body {
     margin: 0 10px;  
     text-decoration: none;
     color: white;
-    /* font-family: 'Poppins'; */
 }
 
 
@@ -92,11 +97,17 @@ body {
 
 
 #features {
-    height: 380px;
+    height: 100px;
     background-color: beige;
     display: flex;
     justify-content: center;
     padding-top: 30px;
+}
+
+#features h3 {
+    font-family: "Stopbuck", sans-serif;
+    font-size: 47px;
+    letter-spacing: 1px;
 }
 
 
@@ -173,7 +184,7 @@ body {
 
 
 #gallery img {
-    height: 300px;
+    height: 330px;
     background-color: blueviolet;
     padding: 50px 0 50px 0;
     margin: 10px 10px 10px 10px;
