@@ -13,6 +13,7 @@
 body {
     font-family: "Poppins", sans-serif;
     color: #363636;
+    max-width: 412px;
 }
 
 @font-face {
@@ -54,14 +55,9 @@ body {
 
 
 #nav-con {
-    background-color: blueviolet;
+    background-color: #651799;
     height: 144px;
 }
-
-
-
-
-
 
 #main-nav ul {
     list-style-type: none;
@@ -69,12 +65,10 @@ body {
     margin: 0;
     display: flex;
 }
+
 #main-nav ul li {
     margin: 0 10px;  
 }
-
-
-
 
 #main-nav ul li a{
     margin: 0 10px;  
@@ -84,16 +78,13 @@ body {
 
 
 #hero-banner {
-    background-color: rgb(106, 29, 179);
-    height: 470px;
+    background-color: #6D0F9B;
+    background-image: url('images/home_header_412.png');
+    height: 529px;
 }
 
-#hero-banner-contact {
-    background-color: rgb(106, 29, 179);
-    height: 470px;
-    display: flex;
-    justify-content: center;
-}
+
+
 
 
 #features {
