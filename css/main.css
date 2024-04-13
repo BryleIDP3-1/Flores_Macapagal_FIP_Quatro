@@ -6,6 +6,14 @@
 }
 
 
+/* Confirmed Font Allow */
+body {
+    font-family: "Poppins", sans-serif;
+    color: #363636;
+}
+/* Confirmed Font Allow */
+
+
 .product-style{
     height: 150px;
 }
