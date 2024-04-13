@@ -36,21 +36,7 @@ body {
     width: 200px;
 }
 
-#logo-contact img {
-    width: 300px;
-}
 
-#subtitle-contact {
-    text-align: center;
-}
-
-#product-strawberry-apple img {
-    width: 200px;
-}
-
-#product-grape-orange img {
-    width: 200px;
-}
 
 
 
@@ -84,12 +70,6 @@ body {
 }
 
 
-#hero-banner-contact {
-    background-color: rgb(106, 29, 179);
-    height: 470px;
-    display: flex;
-    justify-content: center;
-}
 
 
 
@@ -352,6 +332,32 @@ body {
 /* CONTACT PAGE */
 
 
+#logo-contact img {
+    width: 300px;
+}
+
+
+#subtitle-contact {
+    text-align: center;
+}
+
+#product-strawberry-apple img {
+    width: 200px;
+}
+
+#product-grape-orange img {
+    width: 200px;
+}
+
+
+#hero-banner-contact {
+    background-color: rgb(106, 29, 179);
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+
 #contact-form-con {
     background-color: beige; /* Adjust background color as needed */
     /* height: 200px;  */
@@ -399,7 +405,6 @@ body {
     flex: 1;
     margin-right: 10px; /* Adjust spacing between inputs */
 }
-
 
 
 
