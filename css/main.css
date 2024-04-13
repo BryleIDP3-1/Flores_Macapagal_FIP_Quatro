@@ -24,6 +24,21 @@
     width: 200px;
 }
 
+#logo-contact img {
+    width: 300px;
+}
+
+#subtitle-contact {
+    text-align: center;
+}
+
+#product-strawberry-apple img {
+    width: 200px;
+}
+
+#product-grape-orange img {
+    width: 200px;
+}
 
 
 
@@ -61,6 +76,13 @@
 #hero-banner {
     background-color: rgb(106, 29, 179);
     height: 470px;
+}
+
+#hero-banner-contact {
+    background-color: rgb(106, 29, 179);
+    height: 470px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -314,10 +336,56 @@
 }
 
 
+/* CONTACT PAGE */
 
 
+#contact-form-con {
+    background-color: beige; /* Adjust background color as needed */
+    /* height: 200px;  */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+#contact-form-con input, textarea {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font: inherit;
+    width: 60%;
+ }
+ 
+ #contact-form-con textarea {
+    height: 250px;
+ }
+ 
+ #contact-form-con input[type="submit"] {
+    padding: 12px 28px;
+    background: #721AAE;
+    color: #fff;
+    border: none;
+    transition: all 200ms ease-in;
+    width: 150px;
+    align-self: flex-end;
+ }
+ 
+ #contact-hero-form input[type="submit"]:hover {
+    background-color: #A44CE1;
+    border-radius: 0;
+ }
 
+ .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group input {
+    flex: 1;
+    margin-right: 10px; /* Adjust spacing between inputs */
+}
 
 
 
