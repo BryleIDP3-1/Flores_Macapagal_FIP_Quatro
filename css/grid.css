@@ -1,4 +1,4 @@
-  /* ---Mobile Library Grid Styles--- */
+/* ---Mobile Library Grid Styles--- */
   
   .full-width-grid-con {
     display: grid; 
@@ -32,7 +32,7 @@
  .col-end-4 {grid-column-end: 4;}
  .col-end-5 {grid-column-end: 5;}
 
- /* ---Tablet Library Grid Styles--- */
+/* ---Tablet Library Grid Styles--- */
  
  @media screen and (min-width: 768px) { 
  
@@ -88,7 +88,7 @@
     .m-col-end-13 {grid-column-end: 13;}
  }
  
- /* ---Desktop Library Grid Styles--- */
+/* ---Desktop Library Grid Styles--- */
  
  @media screen and (min-width: 1200px) { 
  
