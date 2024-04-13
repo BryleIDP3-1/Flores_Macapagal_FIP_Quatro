@@ -80,6 +80,7 @@ body {
 #hero-banner {
     background-color: #6D0F9B;
     background-image: url('images/home_header_412.png');
+    background-size: cover;
     height: 529px;
 }
 
