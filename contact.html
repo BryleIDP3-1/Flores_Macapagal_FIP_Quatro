@@ -8,15 +8,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="images/favicon_1.svg" rel="icon" type="image/x-icon">
 </head>
 
-<body>
-    <!-- Import Required -->
 
-<script src="js/main.js"></script>
+<!-- GRID REFERENCE
+        <section class="grid-con menu">
+            <h2 class="header hidden">Header</h2>
+            <div id="logo" class="box col-start-1 col-end-4 m-col-start-1 m-col-end-10 l-col-start-1 l-col-end-5">Logo</div>
+        </section> -->
+
+<!-- IMAGE SOURCE REFERENCE <img
+        sizes="
+            (min-width: 900px) 1200px, 
+            (min-width: 650px) 800px,
+            (min-width: 400px) 600px,
+            100vw"
+        srcset="
+            images/blood-orange_320.jpg 320w,
+            images/blood-orange_1111.jpg 1111w,
+            images/blood-orange_1659.jpg 1659w"
+        src="images/blood-orange_320.jpg"
+        alt="slices of a blood orange"> -->
+
+<!-- ADD SOON THE STOPBUCK PROPER IMPORT -->
+
+<body>
+    <h1 class="hidden">Quatro's Contact</h1>
+
+    <div id="nav-con">
+    <header class="grid-con">
+    <h2 class="hidden">Navigation Bar</h2>
+        
+        <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+        <img src="images/quatro_logo.svg" alt="Main Logo">
+        </div>
+        <nav id="main-nav" class="col-span-full m-col-start-7 m-col-end-11">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+     
+    </header>
+    </div>
+
+
+    <section id="hero-banner-contact" class="full-width-grid-con">
+        <h2 class="hidden">Hero Banner</h2>
+
+        <div id="product-strawberry-apple">
+            <img src="images/product-4.png" alt="Strawberry Product">
+            <img src="images/product-3.png" alt="Apple Product">
+        </div>
+
+        <div id="title-contact" class="col-span-full m-col-start-1 m-col-end-4">
+            <div id="logo-contact">
+            <img src="images/quatro_logo-white.svg" alt="Main Logo">
+            </div>
+            <div id="subtitle-contact">
+                <h2>Deliciously</h2>
+                <h2>Tasty</h2>
+                <button>Buy Now</button>
+            </div>
+
+
+        </div>
+
+         <div id="product-grape-orange">
+                <img src="images/product-2.png" alt="Orange Product">
+                <img src="images/product-1.png" alt="Grape Product">
+        </div>
+
+    </section>
+
+    <section id="contact-form-con" class="grid-con">
+        <h2 class="hidden">Contact Form</h2>
+        <div class="form-container">
+            <h3>Get In Touch With Us</h3>
+            <p>Got any inquiries? Fill in your details below and let’s chat away!</p>
+            <form action="email.php" method="POST" enctype="text/plain">
+                <div class="input-group">
+                    <input name="firstName" type="text" placeholder="*First Name">
+                    <input name="lastName" type="text" placeholder="*Last Name">
+                </div>
+                <div class="input-group">
+                    <input name="infoEmail" type="text" required placeholder="*Email Address">
+                    <input name="infoPhone" type="text" required placeholder="*Mobile Number">
+                </div>
+                <textarea name="msg" placeholder="*Your Message Here..."></textarea>
+                <input name="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="follow-us" class="grid-con">
+        <h2 class="hidden">Gallery</h2>
+   
+        <div id="follow-us-button" class="col-span-full m-col-start-4 m-col-end-10">
+            <h2>Follow Us @Quatro</h2>
+        </div>
+   
+        <div id="gallery" class="col-span-full m-col-span-full">
+            <div id="gallery-row1">
+                <img src="images/gallery_photo_1.png" alt="Purple Man Having Fun">
+                <img src="images/gallery_photo_2.png" alt="Red Two Friends with Balloons">
+                <img src="images/gallery_photo_3.png" alt="Blue Three Friends Gaming">
+                <img src="images/gallery_photo_4.png" alt="Yellow Woman Eating an Orange">
+                <img src="images/gallery_photo_5.png" alt="Green Man with Kiwis">
+            </div>
+            <div id="gallery-row2">
+                <img src="images/gallery_photo_6.png" alt="Purple Man Having Fun">
+                <img src="images/gallery_photo_7.png" alt="Red Two Friends with Balloons">
+                <img src="images/gallery_photo_8.png" alt="Blue Three Friends Gaming">
+                <img src="images/gallery_photo_9.png" alt="Yellow Woman Eating an Orange">
+                <img src="images/gallery_photo_10.png" alt="Green Man with Kiwis">
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer-con" class="grid-con">
+        <h2 class="hidden">Footer</h2>
+   
+        <div id="logo-footer" class="col-span-full m-col-start-2 m-col-end-4 l-col-start-2 l-col-end-5">
+            <img src="images/main_logo.svg" alt="Main Logo">
+        </div>
+        <div id="logo-socmed" class="col-span-full m-col-start-2 m-col-end-4 l-col-start-2 l-col-end-5">
+            <img src="images/facebook.svg" alt="Facebook Icon">
+            <img src="images/snapchat.svg" alt="Snapchat Icon">
+            <img src="images/twitter.svg" alt="Twitter Icon">
+            <img src="images/youtube.svg" alt="Youtube Icon">
+        </div>
+   
+        <nav id="footer-menu" class="col-span-full l-col-start-6 l-col-end-8">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+   
+        <nav id="footer-service" class="col-span-full l-col-start-8 l-col-end-10">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+   
+        <div id="credits" class="col-span-full m-col-span-full">
+            <p>Copyright &#169; 2024 Quatro Official.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
