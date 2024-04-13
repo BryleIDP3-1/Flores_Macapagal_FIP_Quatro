@@ -5,114 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quatro - Products</title>
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="images/favicon_1.svg" rel="icon" type="image/x-icon">
 </head>
 
-<!-- GRID REFERENCE
-    <h1 class="hidden">Boxed Grid</h1>
-        <section class="grid-con menu">
-            <h2 class="header hidden">Header</h2>
-            <div id="logo" class="box col-start-1 col-end-4 m-col-start-1 m-col-end-10 l-col-start-1 l-col-end-5">Logo</div>
-        </section> -->
 
 <body>
-    <h1 class="hidden">Quatro's Home</h1>
+    <h1 class="hidden">Quatro's Product</h1>
 
-    <header class="grid-con">
-    <h2 class="hidden">Navigation Bar</h2>
-        <img src="images/main_logo.svg" alt="Main Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <div id="nav-con">
+        <header class="grid-con">
+            <h2 class="hidden">Navigation Bar</h2>
+            <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
+                <img src="images/quatro_logo.svg" alt="Main Logo">
+            </div>
+            <nav id="main-nav" class="col-span-full m-col-start-7 m-col-end-11">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
 
     <button class="open-reward">Reward Here</button>
-    
 
-    <section id="products-home" class="grid-con">
-    <h2 class="hidden">Products</h2>
-        <div>
-            <h2>Our Delicious Drinks</h2>
-        </div>
 
-        <div id="blueberry" data-hero-index="0">
+    <section id="product-grape" class="full-width-grid-con">
+        <h2 class="hidden">Product - Blueberry Crush</h2>
+        <div id="blueberry-image">
             <img class="product-style" src="images/product-1.png" alt="Blueberry Crush Drink">
+        </div>
+        <div id="blueberry-info" data-hero-index="0">
             <h3>Blueberry Crush</h3>
-            <h4>Tantalize your taste buds now!</h4>
-            <p>INGREDIENTS: Blueberry, Grapes, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).
-            </p>
-            <button>Buy Now</button>
-            <img class="info-icon" src="images/info-icon.svg" alt="Info Icon">
-            
+            <h4 class="taste-buds">Tantalize your taste buds now!</h4>
+            <p class="ingredients">INGREDIENTS: Blueberry, Grapes, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).</p>
+            <button class="info-button">MORE INFO</button>
         </div>
+    </section>
 
-        <div id="peachy"  data-hero-index="1">
-            <img class="product-style" src="images/product-2.png" alt="Peachy Burst Drink">
-            <h3>Peachy Burst</h3>
-            <h4>Fizzy goodness and lovely flavor!</h4>
-            <p>INGREDIENTS: Peach, Orange, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).
-            </p>
-            <button>Buy Now</button>
-            <img class="info-icon" src="images/info-icon.svg" alt="Info Icon">
-        </div>
 
-        <div id="apple"  data-hero-index="2">
-            <img class="product-style" src="images/product-3.png" alt="Apple Fusion Drink">
-            <h3>Apple Fusion</h3>
-            <h4>Deliciously good and fantastic!</h4>
-            <p>INGREDIENTS: Green Apple, Melon, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).
-            </p>
-            <button>Buy Now</button>
-            <img class="info-icon" src="images/info-icon.svg" alt="Info Icon">
-        </div>
-
-        <div id="scarlet"  data-hero-index="3">
-            <img class="product-style" src="images/product-4.png" alt="Scarlet Berry Drink">
+    <section id="product-strawberry" class="full-width-grid-con">
+        <h2 class="hidden">Product - Scarlett Berry</h2>
+        <div id="strawberry-info" data-hero-index="1">
             <h3>Scarlet Berry</h3>
-            <h4>Feel the fiesta always there!</h4>
-            <p>INGREDIENTS: Strawberry, Pomegranate, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).
-            </p>
-            <button>Buy Now</button>
-            <img class="info-icon" src="images/info-icon.svg" alt="Info Icon">
+            <h4 class="taste-buds">Feel the fiesta always there!</h4>
+            <p class="ingredients">INGREDIENTS: Strawberry, Pomegranate, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).</p>
+            <button class="info-button">MORE INFO</button>
+        </div>
+        <div id="strawberry-image">
+            <img class="product-style" src="images/product-4.png" alt="Scarlett Berry Drink">
         </div>
     </section>
 
-    
-    <section class="grid-con">
-    <h2 class="hidden">Newsletter</h2>
-    
-            <div>
-                <h3>Subscribe to our Sparkling News!</h3>
-                <form>
-                    <label for="email">Email Address</label>
-                    <input type="text" id="email" name="email" required>
-                </form>
-            </div>
 
+    <section id="product-apple" class="full-width-grid-con">
+        <h2 class="hidden">Product - Apple Fusion</h2>
+        <div id="apple-image">
+            <img class="product-style" src="images/product-3.png" alt="Blueberry Crush Drink">
+        </div>
+        <div id="apple-info" data-hero-index="2">
+            <h3>Apple Fusion</h3>
+            <h4 class="taste-buds">Deliciously good and fantastic!</h4>
+            <p class="ingredients">INGREDIENTS: Green Apple, Melon, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).</p>
+            <button class="info-button">MORE INFO</button>
+        </div>
     </section>
 
-    <footer class="grid-con">
-    <h2 class="hidden">Footer</h2>
 
-        <img src="images/main_logo.svg" alt="Main Logo">
+    <section id="product-orange" class="full-width-grid-con">
+        <h2 class="hidden">Product - Peachy Burst</h2>
+        <div id="peachy-burst-info" data-hero-index="3">
+            <h3>Peachy Burst</h3>
+            <h4 class="taste-buds">Fizzy goodness and lovely flavor!</h4>
+            <p class="ingredients">INGREDIENTS: Peach, Orange, Water, Carbon Dioxide, Natural Flavors, Stevia, Ascorbic Acid (Vitamin C).</p>
+            <button class="info-button">MORE INFO</button>
+        </div>
+        <div id="orange-image" data-hero-index="1">
+            <img class="product-style" src="images/product-2.png" alt="Peachy Burst Drink">
+        </div>
+    </section>
 
-        <img src="images/facebook.svg" alt="Facebook Icon">
-        <img src="images/snapchat.svg" alt="Snapchat Icon">
-        <img src="images/twitter.svg" alt="Twitter Icon">
-        <img src="images/youtube.svg" alt="Youtube Icon">
 
-        <nav>
+    <section id="follow-us" class="grid-con">
+        <h2 class="hidden">Gallery</h2>
+   
+        <div id="follow-us-button" class="col-span-full m-col-start-4 m-col-end-10">
+            <h2>Follow Us @Quatro</h2>
+        </div>
+   
+        <div id="gallery" class="col-span-full m-col-span-full">
+            <div id="gallery-row1">
+                <img src="images/gallery_photo_1.png" alt="Purple Man Having Fun">
+                <img src="images/gallery_photo_2.png" alt="Red Two Friends with Balloons">
+                <img src="images/gallery_photo_3.png" alt="Blue Three Friends Gaming">
+                <img src="images/gallery_photo_4.png" alt="Yellow Woman Eating an Orange">
+                <img src="images/gallery_photo_5.png" alt="Green Man with Kiwis">
+            </div>
+            <div id="gallery-row2">
+                <img src="images/gallery_photo_6.png" alt="Purple Man Having Fun">
+                <img src="images/gallery_photo_7.png" alt="Red Two Friends with Balloons">
+                <img src="images/gallery_photo_8.png" alt="Blue Three Friends Gaming">
+                <img src="images/gallery_photo_9.png" alt="Yellow Woman Eating an Orange">
+                <img src="images/gallery_photo_10.png" alt="Green Man with Kiwis">
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer-con" class="grid-con">
+        <h2 class="hidden">Footer</h2>
+   
+        <div id="logo-footer" class="col-span-full m-col-start-2 m-col-end-4 l-col-start-2 l-col-end-5">
+            <img src="images/main_logo.svg" alt="Main Logo">
+        </div>
+        <div id="logo-socmed" class="col-span-full m-col-start-2 m-col-end-4 l-col-start-2 l-col-end-5">
+            <img src="images/facebook.svg" alt="Facebook Icon">
+            <img src="images/snapchat.svg" alt="Snapchat Icon">
+            <img src="images/twitter.svg" alt="Twitter Icon">
+            <img src="images/youtube.svg" alt="Youtube Icon">
+        </div>
+   
+        <nav id="footer-menu" class="col-span-full l-col-start-6 l-col-end-8">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
@@ -120,8 +143,8 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <nav>
+   
+        <nav id="footer-service" class="col-span-full l-col-start-8 l-col-end-10">
             <ul>
                 <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -129,10 +152,14 @@
                 <li><a href="#">Careers</a></li>
             </ul>
         </nav>
-
-        <p>Copyright &#169; 2024 Quatro Official.</p>
+   
+        <div id="credits" class="col-span-full m-col-span-full">
+            <p>Copyright &#169; 2024 Quatro Official.</p>
+        </div>
     </footer>
+
 
     <script src="js/main.js"></script>
 </body>
 </html>
+

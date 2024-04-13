@@ -1,22 +1,23 @@
+
 @charset "utf-8";
 /* CSS Document */
+
+
+
 
 .hidden {
     display: none;
 }
 
 
-/* Confirmed Font Allow */
-body {
-    font-family: "Poppins", sans-serif;
-    color: #363636;
-}
-/* Confirmed Font Allow */
 
 
 .product-style{
-    height: 150px;
+    height: 680px;
+    padding-top: 100px;
 }
+
+
 
 
 #logo img {
@@ -24,10 +25,15 @@ body {
 }
 
 
+
+
 #nav-con {
     background-color: blueviolet;
     height: 144px;
 }
+
+
+
 
 
 
@@ -42,6 +48,8 @@ body {
 }
 
 
+
+
 #main-nav ul li a{
     margin: 0 10px;  
     text-decoration: none;
@@ -49,10 +57,12 @@ body {
     /* font-family: 'Poppins'; */
 }
 
+
 #hero-banner {
     background-color: rgb(106, 29, 179);
     height: 470px;
 }
+
 
 #features {
     height: 380px;
@@ -62,10 +72,13 @@ body {
     padding-top: 30px;
 }
 
+
 #about-quatro {
     height: 450px;
     background-color: rgb(234, 234, 204);
 }
+
+
 
 
 #product-title {
@@ -76,6 +89,7 @@ body {
     text-align: center;
 }
 
+
 #products {
     height: 380px;
     background-color: beige;
@@ -84,10 +98,12 @@ body {
     padding-top: 30px;
 }
 
+
 #quatro-history {
     height: 450px;
     background-color: rgb(234, 234, 204);
 }
+
 
 #quote {
     background-color: rgb(255, 123, 0);
@@ -97,19 +113,23 @@ body {
     text-align: center;
 }
 
+
 #follow-us-button {
     background-color: red;
     text-align: center;
     border-radius: 15px;
 }
 
+
 #follow-us {
     background-color: rgb(234, 234, 204);
 }
 
+
 #merch-con {
     background-color: beige;
 }
+
 
 #merch-button {
     background-color: rgb(255, 123, 0);
@@ -117,11 +137,13 @@ body {
     border-radius: 15px;
 }
 
+
 #gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
 
 #gallery img {
     height: 300px;
@@ -130,11 +152,13 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
+
 #merch-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
 
 #merch-gallery img {
     height: 300px;
@@ -143,46 +167,54 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
+
 #ceo-message {
     text-align: center;
   }
 
+
 #ceo-message-con {
     background-color: beige;
 }
-  
+ 
 #ceo-message div {
     margin-bottom: 20px; /* Add spacing between the text and video */
   }
+
 
 #available-con {
     text-align: center;
   }
 
+
 #available-con {
     background-color: beige;
 }
+ 
 
-  
-  
-#video {
+
+ 
+  #video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: purple;
     height: 300px;
-}
+  }
+
 
 #reviews-con {
     background-color: red;
     text-align: center; /* Align center */
 }
 
+
 #reviews-wrapper {
     overflow-x: auto; /* Allow horizontal scrolling */
     white-space: nowrap; /* Prevent wrapping */
 }
+
 
 #reviews {
     display: flex;
@@ -190,8 +222,9 @@ body {
    
 }
 
+
 #reviews > div {
-    
+   
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -199,6 +232,8 @@ body {
     width: 220px;
     text-align: center; /* Align content center */
 }
+
+
 
 
 #newsletter-con {
@@ -209,27 +244,33 @@ body {
     text-align: center;
 }
 
+
 #newsletter-con form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
 #footer-con {
     background-color: purple;
 }
+
 
 #logo-footer, #logo-socmed, #footer-menu, #footer-service {
     padding: 20px;
 }
 
+
 #logo-footer, #logo-socmed {
     background-color: beige;
 }
 
+
 #footer-menu, #footer-service {
     background-color: lightblue;
 }
+
 
 #credits {
     text-align: center;
@@ -237,12 +278,65 @@ body {
 
 
 
+
+
+
+
+
+/* PRODUCT PAGE */
+
+
+#product-grape {
+    background-color: rgb(114, 29, 195);
+    height: 950px;
+    display: flex;
+}
+
+
+#product-strawberry {
+    background-color: #CC173A;
+    height: 950px;
+    display: flex;
+}
+
+
+#product-apple {
+    background-color: #329B13;
+    height: 950px;
+    display: flex;
+}
+
+
+#product-orange {
+    background-color:#F26200;
+    height: 950px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* JAVASCRIPT LIGHTBOX TEST */
+
+
+
 
 #blueberry, #peachy, #apple, #scarlet {
     position: relative;
     margin-left: 50px;
 }
+
+
+
+
 
 
 .info-icon{
@@ -252,6 +346,8 @@ body {
     height: 35px;
     cursor: pointer;
 }
+
+
 
 
 .lightbox.active {
@@ -268,6 +364,8 @@ body {
 }
 
 
+
+
 .lightbox.active .lightbox-content {
     background-color: white; /* Adjust as needed */
     padding: 20px;
@@ -277,6 +375,8 @@ body {
     height: 200px;
     text-align: center;
 }
+
+
 
 
 .lightbox.active .lightbox-close {
@@ -294,6 +394,13 @@ body {
     text-align: center;
 }
 
+
+
+
+
+
+
+
 .open-reward {
     z-index: 90000;
     position: fixed;
@@ -307,3 +414,12 @@ body {
     font-size: 20px;
     background-color: orange;
 }
+
+
+
+
+
+
+
+
+
