@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-
 .hidden {
     display: none;
 }
@@ -155,18 +154,17 @@
 #available-con {
     background-color: beige;
 }
-  
 
   
   
-  #video {
+#video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: purple;
     height: 300px;
-  }
+}
 
 #reviews-con {
     background-color: red;
@@ -231,15 +229,7 @@
 
 
 
-
-
-
-
-
-
-
 /* JAVASCRIPT LIGHTBOX TEST */
-
 
 #blueberry, #peachy, #apple, #scarlet {
     position: relative;
@@ -296,9 +286,6 @@
     text-align: center;
 }
 
-
-
-
 .open-reward {
     z-index: 90000;
     position: fixed;
@@ -312,6 +299,3 @@
     font-size: 20px;
     background-color: orange;
 }
-
-
-
