@@ -34,8 +34,9 @@ header {
 }
 
 #main_logo {
-    margin-left: 25px;
+    margin-left: 10px;
     margin-top: 20px;
+    width: 223px;
 }
 
 #main-nav ul {
