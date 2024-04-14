@@ -340,23 +340,21 @@ button {
   }
 
 /* Customer Reviews Section */
-
 #reviews-con {
+    position: relative; /* Required for absolute positioning of slider buttons */
     background-image: url('../images/review_bg_412.png');
     background-color: #CC173A;
     background-size: cover;
-    height: 363px;
-    /* overflow-x: auto; */
-    /* white-space: nowrap; */
+    height: 500px;
+    overflow: hidden; /* Crop the articles */
 }
 
-#reviews-title h3 {
+#reviews-title h2 {
     font-size: 32px;
     font-weight: 800;
     text-transform: uppercase;
     color: white;
     text-align: center;
-    display: flex;
 }
 
 #reviews-title p {
@@ -365,40 +363,67 @@ button {
     font-size: 18px;
 }
 
-#reviews div {
-    background-color: white;
-    border-radius: 15px;
-    width: 163px;
-    height: 226px;
-    margin-top: 15px;
+#reviews-wrapper {
+    overflow: hidden; /* Hide overflowing articles */
 }
 
-#reviews p {
+#reviews {
+    display: flex; /* Make articles display horizontally */
+    transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+}
+
+#reviews article {
+    background-color: white;
+    border-radius: 15px;
+    width: 160px; 
+    flex-shrink: 0;
+    /* height: 226px; */
+    margin: 0 10px 0 10px; /* Reset margin */
+    padding: 10px;
+    text-align: center;
+}
+
+#reviews article p {
     font-weight: 560;
     font-size: 12px;
     line-height: 21px;
     margin-top: 25px;
 }
 
-#reviews img {
+#reviews article img {
     width: 94px;
     height: 17px;
     margin-top: 10px;
 }
 
-#reviews h3 {
+#reviews article h3 {
     font-family: "Stopbuck", sans-serif;
     letter-spacing: 1px;
     font-size: 20px;
     margin-top: 5px;
 }
 
-#review-1, #review-5 {
-    display: none;
+#slider-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-#reviews div * {
-    margin-left: 15px;
+#prev-btn,
+#next-btn {
+    background-color: #fff;
+    color: #CC173A;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    background-color: #CC173A;
+    color: #fff;
 }
 
 /* Merch Section */
