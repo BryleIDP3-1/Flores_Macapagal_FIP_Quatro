@@ -11,7 +11,6 @@ body {
     font-family: "Poppins", sans-serif;
     color: #363636;
     max-width: 412px;
-    /* overflow-x: hidden; */
 }
 
 @font-face {
@@ -27,8 +26,7 @@ button {
     outline: none;
 }
 
-/* JAVASCRIPT LIGHTBOX TEST */
-
+/* JAVASCRIPT LIGHTBOX */
 
 .lightbox.active {
     width: 100%;
@@ -44,7 +42,7 @@ button {
 }
 
 .lightbox.active .lightbox-content {
-    background-color: white; /* Adjust as needed */
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     color: rgb(0, 0, 0);
@@ -57,9 +55,6 @@ button {
     position: absolute;
     top: 200px;
     right: 280px;
-    /* top: 250px;
-    right: 580px;  */
-    /* Adjust the right value to move the close button closer to the lightbox text */
     color: white;
     font-size: 3em;
     cursor: pointer;
@@ -67,19 +62,16 @@ button {
 
 .lightbox.active h2, .lightbox.active p {
     text-align: center;
-    /* color: #651799; */
 }
 
-/* Lightbox for product information */
+/* PRODUCT INFO LIGHTBOX */
 .lightbox-product {
-    background-color: rgba(0, 0, 0, 0.5); /* Example background color */
-    /* Add additional styling for the product information lightbox */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Lightbox for reward claim */
+/* REWARD CLAIM LIGHTBOX*/
 .lightbox-reward {
-    background-color: rgba(255, 255, 255, 0.8); /* Example background color */
-    /* Add additional styling for the reward claim lightbox */
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* REWARD POP-OVER */
@@ -119,7 +111,6 @@ button {
  
  #main-nav input, #burger-con {
     display: none;
-    /* position: absolute; */
  }
 
 
@@ -129,19 +120,16 @@ button {
     cursor: pointer;
     transition: all .3s ease;
     position: absolute;
-    top: 20px; /* Adjust this value to position vertically */
-    right: 20px; /* Adjust this value to position horizontally */
+    top: 20px;
+    right: 20px;
 }
 
  
- /*   ~ sibling selector   */
- 
+/* BURGER MENU SIBLING SELECTOR */
 
  #main-nav input:checked ~ #burger-con {
     display: block;
-    /* position: absolute; */
-    z-index: 9999;
-    /* margin-left: -15px; */
+    z-index: 999;
  }
  
  #main-nav input:checked ~ label img {
@@ -180,7 +168,6 @@ button {
 
  #main-nav ul li:first-child {
     padding-top: 15px;
-
  } 
 
 
@@ -279,7 +266,6 @@ button {
 
 #products img:first-child {
     width: 150px;
-    /* height: 150px; */
 }
 
 .desc-cards {
@@ -295,9 +281,7 @@ button {
 }
 
 .product button {
-    /* margin-top: 10px; */
     margin-bottom: 20px;
-    /* height: 100px; */
 }
 
 .lightbox-content #blueberry-info {
@@ -315,6 +299,7 @@ button {
 .lightbox-content #peachy-burst-info {
     color: orange;
 }
+
 /* Quatro's History Section */
 
 #quatro-history {
@@ -398,10 +383,6 @@ button {
     justify-content: center;
   }
 
-/* #gallery img {
-    height: 272px;
-} */
-
 /* CEO Message Section */
 
 #ceo-message-con {
@@ -432,30 +413,30 @@ button {
 }
 
 #video {
-    position: relative; /* Ensure proper positioning */
-    width: 100%; /* Make sure the video container takes the full width of its parent */
-    max-width: 560px; /* Limit maximum width to maintain aspect ratio */
-    height: 0; /* Set initial height to 0 to maintain aspect ratio */
-    padding-bottom: 56.25%; /* Aspect ratio (height/width) for a 16:9 video */
-    overflow: hidden; /* Hide overflowing content */
+    position: relative; 
+    width: 100%; 
+    max-width: 560px; 
+    height: 0; 
+    padding-bottom: 56.25%; 
+    overflow: hidden; 
 }
 
 #video iframe {
-    position: absolute; /* Position the video element within its container */
-    width: 100%; /* Ensure the video takes the full width of its container */
-    height: 100%; /* Ensure the video takes the full height of its container */
-    top: 0; /* Align to the top of the container */
-    left: 0; /* Align to the left of the container */
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
 }
 
 /* Customer Reviews Section */
 #reviews-con {
-    position: relative; /* Required for absolute positioning of slider buttons */
+    position: relative; 
     background-image: url('../images/review_bg_412.png');
     background-color: #CC173A;
     background-size: cover;
     height: 500px;
-    overflow: hidden; /* Crop the articles */
+    overflow: hidden;
 
 }
 
@@ -479,12 +460,12 @@ button {
 }
 
 #reviews-wrapper {
-    overflow: hidden; /* Hide overflowing articles */
+    overflow: hidden;
 }
 
 #reviews {
-    display: flex; /* Make articles display horizontally */
-    transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+    display: flex; 
+    transition: transform 0.3s ease;
 }
 
 #reviews article {
@@ -492,8 +473,7 @@ button {
     border-radius: 15px;
     width: 160px; 
     flex-shrink: 0;
-    /* height: 226px; */
-    margin: 0 10px 0 10px; /* Reset margin */
+    margin: 0 10px 0 10px;
     padding: 10px;
     text-align: center;
 }
@@ -546,7 +526,6 @@ button {
 
 /* Merch Section */
 
-/* Centering merch-header */
 #merch-header {
     background-color: #F26200;
     text-align: center;
@@ -556,11 +535,10 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     margin-top: 30px;
 }
 
-/* Centering merch p and merch-title */
 .merch p, .merch-title {
     text-align: center;
     margin: 0;
@@ -569,7 +547,6 @@ button {
     font-size: 90%;
 }
 
-/* Centering merch button */
 .merch button {
     display: flex;
     justify-content: center;
@@ -577,7 +554,6 @@ button {
     width: 180px;
 }
 
-/* Additional styling */
 #merch-con {
     height: 852px;
     text-align: center;
@@ -591,7 +567,6 @@ button {
 
 .merch img {
     width: 150px;
-    /* height: 150px; */
     margin: 10px 20px 0px 20px;
 
 }
@@ -709,7 +684,6 @@ button {
     color: #ffffff;
 }
 
-
 #footer-info {
     display: grid;
     justify-content: center;
@@ -724,19 +698,19 @@ button {
 #footer-nav,
 #footer-service {
     display: flex;
-    justify-content: center; /* Center the nav horizontally */
+    justify-content: center;
 }
 
 #footer-nav ul,
 #footer-service ul {
     list-style: none;
     padding: 0;
-    text-align: left; /* Align the text left */
+    text-align: left;
 }
 
 #footer-nav li,
 #footer-service li {
-    margin-bottom: 10px; /* Add some bottom margin for spacing */
+    margin-bottom: 10px; 
 }
 
 #footer-nav a,
@@ -914,12 +888,12 @@ button {
 
 
 
-/* TABLET SIZE */
+/* TABLET MEDIA QUERIES */
+
 @media screen and (min-width: 768px) {
-    /* Add tablet-specific styles here */
     body {
         max-width: 768px;
-        margin: 0 auto; /* Center content */
+        margin: 0 auto;
     }
 
 /* CUSTOMER REVIEW SECTION */
@@ -934,8 +908,6 @@ button {
         padding: 10px;
         text-align: center;
     }
-
-/* END CUSTOMER REVIEW SECTION */
 
 /* HEADER MENU NAV */
 
@@ -974,10 +946,7 @@ button {
 
 /* END MENU NAV */
 
-
-
 /* FOOTER NAV */
-
 
     #footer-nav {
     display: block;
@@ -1010,30 +979,22 @@ button {
         display: block;
         margin-left: 40px;
     }
-
-      /* END FOOTER NAV */
-
-
 }
 
 
-/* DESKTOP SIZE */
+/* DESKTOP MEDIA QUERIES */
+
 @media screen and (min-width: 1200px) {
     body {
         max-width: 1200px;
         margin: 0 auto; /* Center content */
     }
 
-
     /* CUSTOMER REVIEW SECTION */
 
     #slider-buttons {
         display: none;
     }
-
-    /* END CUSTOMER REVIEW SECTION */
-
-
 
     /* HEADER MENU NAV */
 
@@ -1044,10 +1005,8 @@ button {
         width: 450px;
      }
 
-     /* END MENU NAV */
-
-
     /* FOOTER NAV */
+
     #footer-info {
         display: block;
         margin-left: 60px;
@@ -1065,6 +1024,4 @@ button {
     #footer-credits {
         margin-left: -180px;;
     }
-
-    /* END FOOTER NAV */
 }
