@@ -767,6 +767,7 @@ button {
 
 #blueberry-info, #strawberry-info, #apple-info, #peachy-burst-info {
     text-align: center;
+    
 }
 
 
@@ -799,14 +800,14 @@ button {
 
 #product-grape {
     background-color: rgb(114, 29, 195);
-    height: 950px;
+    height: 800px;
     display: block;
     justify-content: center;
 }
 
 #product-strawberry {
     background-color: #CC173A;
-    height: 950px;
+    height: 800px;
     display: block;
     justify-content: center;
 }
@@ -814,14 +815,14 @@ button {
 
 #product-apple {
     background-color: #329B13;
-    height: 950px;
+    height: 800px;
     display: block;
     justify-content: center;
 }
 
 #product-orange {
     background-color:#F26200;
-    height: 950px;
+    height: 800px;
     display: block;
     justify-content: center;
 }
@@ -1009,6 +1010,22 @@ color: #363636;
     #quatro-history img {
         width: 194px;
     }
+
+
+
+/* PRODUCT */
+
+#blueberry-info,
+    #strawberry-info,
+    #apple-info,
+    #peachy-burst-info {
+        flex-direction: row;
+        justify-content: center;
+        width: 412px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 
 /* CUSTOMER REVIEW SECTION */
