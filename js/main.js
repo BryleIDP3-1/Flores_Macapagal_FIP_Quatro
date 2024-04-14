@@ -220,5 +220,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const reviewsWrapper = document.getElementById('reviews');
+    const prevButton = document.getElementById('prev-btn');
+    const nextButton = document.getElementById('next-btn');
+    let currentPosition = 0;
+    const articleWidth = reviewsWrapper.querySelector('article').offsetWidth;
+    const numArticles = reviewsWrapper.childElementCount;
+    const maxPosition = -580; // Maximum translateX value
+
+    function slide(direction) {
+        currentPosition += direction * articleWidth;
+        currentPosition = Math.max(Math.min(currentPosition, 0), maxPosition);
+        reviewsWrapper.style.transform = `translateX(${currentPosition}px)`;
+    }
+
+    prevButton.addEventListener('click', function () {
+        slide(1);
+    });
+
+    nextButton.addEventListener('click', function () {
+        slide(-1);
+    });
+});
 
 
