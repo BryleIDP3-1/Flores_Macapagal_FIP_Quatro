@@ -20,6 +20,13 @@ body {
          url('fonts/stopbuck.ttf') format('truetype');
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
 
 /* HOMEPAGE STYLING */
 
@@ -130,6 +137,16 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: white;
+}
+
+#product-title h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#product-title p {
+    font-size: 16px;
 }
 
 #products {
@@ -300,7 +317,7 @@ header {
 /* Merch Section */
 
 #merch-con {
-    background-color: beige;
+    height: 852px;
 } 
 
 #merch-button {
@@ -324,10 +341,26 @@ header {
 
 #available-con {
     text-align: center;
+    height: 354px;
   }
 
-#available-con {
-    background-color: beige;
+#available-title {
+    font-family: "Stopbuck", sans-serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+    color: #721AAE;
+}
+
+#store_logos {
+    width: 193px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#store_logos img {
+    margin-top: 20px;
 }
 
 /* Newsletter Section */
