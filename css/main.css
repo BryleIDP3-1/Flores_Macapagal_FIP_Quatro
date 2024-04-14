@@ -383,23 +383,40 @@ button {
 
 /* Merch Section */
 
+#merch-con h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+#merch-header {
+    background-color: #F26200;
+    text-align: center;
+    border-radius: 10px;
+    width: 317px;
+    height: 49px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #merch-con {
     height: 852px;
-} 
-
-.merch {
-    width: 150px;
-}
-
-#merch-button {
-    background-color: rgb(255, 123, 0);
     text-align: center;
-    border-radius: 15px;
-}
+} 
 
 .merch img {
     width: 150px;
     height: 150px;
+}
+
+#merch-con h3 img {
+    max-width: 110px;
+}
+
+.merch {
+    width: 150px;
 }
 
 /* Available Stores Section */
@@ -447,8 +464,21 @@ button {
     align-items: center;
 }
 
-/* Footer Section */
+#newsletter-con h3 {
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin-left: 15px;
+    margin-top: 110px;
+    color: white;
+}
 
+#newsletter_box {
+    border-radius: 0;
+}
+
+/* Footer Section */
 
 #footer-con {
     background-color: #651799;
@@ -486,20 +516,19 @@ button {
 
 #footer-nav,
 #footer-service {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the nav horizontally */
 }
 
 #footer-nav ul,
 #footer-service ul {
     list-style: none;
     padding: 0;
+    text-align: left; /* Align the text left */
 }
 
 #footer-nav li,
 #footer-service li {
-    display: block; /* Change display to block */
     margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
 
