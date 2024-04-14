@@ -185,20 +185,21 @@ button {
 #product-title h3 {
     font-size: 28px;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 #product-title p {
     font-size: 16px;
+    font-weight: 500;
+    margin-top: -35px;
 }
 
+
 #products {
-    height: 300px;
-    display: flex;
-    justify-content: center;
     padding-top: 30px;
 }
 
-#products img {
+#products img:first-child {
     width: 150px;
     height: 150px;
 }
@@ -206,6 +207,15 @@ button {
 .desc-cards {
     font-weight: 700;
 }
+
+.product-name {
+    width: 120px;
+}
+
+/* .product {
+
+
+} */
 
 /* Quatro's History Section */
 
@@ -257,18 +267,28 @@ button {
 
 /* Gallery Section */
 
+#follow-us {
+    height: 419px;
+    text-align: center;
+}
+
 #follow-us-text {
     background-color: #CC173A;
     text-align: center;
-    font-size: 24px;
-    border-radius: 15px;
+
+    border-radius: 10px;
     width: 319px;
     height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#follow-us-text h3 {
+#follow-us-text h2 {
     text-transform: uppercase;
     color: white;
+    font-size: 24px;
 }
 
 #gallery {
@@ -411,7 +431,7 @@ button {
     height: 150px;
 }
 
-#merch-con h3 img {
+.merch-title {
     max-width: 110px;
 }
 
