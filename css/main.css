@@ -27,6 +27,7 @@ button {
     outline: none;
 }
 
+
 /* JAVASCRIPT LIGHTBOX */
 
 .lightbox.active {
@@ -46,7 +47,7 @@ button {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: white;
     width: 500px;
     height: 200px;
     text-align: center;
@@ -61,7 +62,13 @@ button {
     cursor: pointer;
 }
 
-.lightbox.active h2, .lightbox.active p {
+.lightbox.active h2 {
+    text-align: center;
+    
+}
+
+.lightbox.active p {
+    color: #C376FF;
     text-align: center;
 }
 
@@ -75,6 +82,24 @@ button {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.lightbox.active .lightbox-content {
+    position: relative; /* Make the lightbox content relative */
+    background-color: #651799;
+      
+}
+
+.lightbox.active .lightbox-close {
+    position: absolute; /* Remove absolute positioning */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    color: white; /* Change color to make it visible */
+    font-size: 2em; /* Adjust font size as needed */
+    cursor: pointer;
+    z-index: 1; /* Ensure it appears above the lightbox content */
+}
+
+
+
 /* REWARD POP-OVER */
 
 .open-reward {
@@ -84,15 +109,13 @@ button {
     bottom: 0;
     left: 0px;
     margin: 0px 20px;
-    width: 180px;
+    width: 154px;
     cursor: pointer;
     font-size: 20px;
     background-color: orange;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #363636;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
 }
 
 
