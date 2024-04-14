@@ -449,7 +449,6 @@ button {
 
 /* Footer Section */
 
-
 #footer-con {
     background-color: #651799;
 }
@@ -486,20 +485,19 @@ button {
 
 #footer-nav,
 #footer-service {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the nav horizontally */
 }
 
 #footer-nav ul,
 #footer-service ul {
     list-style: none;
     padding: 0;
+    text-align: left; /* Align the text left */
 }
 
 #footer-nav li,
 #footer-service li {
-    display: block; /* Change display to block */
     margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
 
