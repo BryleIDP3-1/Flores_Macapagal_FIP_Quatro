@@ -34,35 +34,78 @@ button {
 
 #logo img {
     width: 200px;
+    margin: 20px 20px 0 0;
 }
 
-header {
+#nav-con {
     background-color: #651799;
     height: 100px;
+    position: relative;
+    
+}
+ 
+ #main-nav input, #burger-con {
+    display: none;
+    /* position: absolute; */
+ }
+
+
+ #main-nav label img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: absolute;
+    top: 20px; /* Adjust this value to position vertically */
+    right: 20px; /* Adjust this value to position horizontally */
 }
 
-#main_logo {
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 223px;
-}
+ 
+ /*   ~ sibling selector   */
+ 
 
-#main-nav ul {
-    list-style-type: none;
+ #main-nav input:checked ~ #burger-con {
+    display: block;
+    /* position: absolute; */
+    z-index: 9999;
+    /* margin-left: -15px; */
+ }
+ 
+ #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+ }
+
+
+ #main-nav ul {
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-}
+    background-color: #941ED6;
+    width: 100%;
+    margin-top: 22px;
 
-#main-nav ul li {
-    margin: 0 10px;  
-}
-
-#main-nav ul li a{
-    margin: 0 10px;  
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 7px 0 10px 20px;
+    text-align: center;
     text-decoration: none;
-    color: white;
-}
+    color: #ffffff;
+    margin-top: 7px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+ }
+
+ #main-nav ul li:last-child {
+    padding-bottom: 20px;
+ } 
+
+ #main-nav ul li:first-child {
+    padding-top: 15px;
+
+ } 
+
 
 /* Hero Banner Section */
 
