@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.22 64.69">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        font-size: 37.18px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #0e9b22;
+        font-family: Stopbuck, Stopbuck;
+      }
+
+      .cls-3 {
+        font-size: 30.02px;
+      }
+    </style>
+  </defs>
+  <g id="Export">
+    <g id="Group_1062" data-name="Group 1062">
+      <g id="FUSION" class="cls-1">
+        <text class="cls-3" transform="translate(0 60.82)"><tspan x="0" y="0">FUSION</tspan></text>
+      </g>
+      <g id="APPLE" class="cls-1">
+        <text class="cls-2" transform="translate(3.58 31.7)"><tspan x="0" y="0">APPLE</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
