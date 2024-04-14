@@ -175,7 +175,8 @@ button {
     background-color: #329B13;
     background-size: cover;
     height: 81px;
-
+    margin-top: 80px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -201,17 +202,31 @@ button {
 
 #products img:first-child {
     width: 150px;
-    height: 150px;
+    /* height: 150px; */
 }
 
 .desc-cards {
     font-weight: 700;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product button {
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    /* height: 100px; */
 }
 
 .product-name {
     width: 120px;
+    margin-top: 10px; /* Adjust as needed */
 }
-
 /* .product {
 
 
@@ -221,6 +236,7 @@ button {
 
 #quatro-history {
     height: 625px;
+
 }
 
 #quatro-history h3 {
@@ -228,6 +244,7 @@ button {
     font-size: 37px;
     letter-spacing: 2px;
     color: #277C10;
+    text-align: center;
 }
 
 #quatro-history p {
@@ -243,7 +260,8 @@ button {
     background-color: #F26200;
     background-size: cover;
     height: 437px;
-
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     color: white;
 }
@@ -275,14 +293,14 @@ button {
 #follow-us-text {
     background-color: #CC173A;
     text-align: center;
-
     border-radius: 10px;
     width: 319px;
     height: 44px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 #follow-us-text h2 {
@@ -297,9 +315,9 @@ button {
     justify-content: center;
   }
 
-#gallery img {
+/* #gallery img {
     height: 272px;
-}
+} */
 
 /* CEO Message Section */
 
@@ -312,6 +330,7 @@ button {
     font-size: 37px;
     letter-spacing: 2px;
     color: #721AAE;
+    text-align: center;
   }
 
 #ceo-message p {
@@ -330,14 +349,21 @@ button {
 }
 
 #video {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    width: 325px;
-    height: 185px;
-  }
+    position: relative; /* Ensure proper positioning */
+    width: 100%; /* Make sure the video container takes the full width of its parent */
+    max-width: 560px; /* Limit maximum width to maintain aspect ratio */
+    height: 0; /* Set initial height to 0 to maintain aspect ratio */
+    padding-bottom: 56.25%; /* Aspect ratio (height/width) for a 16:9 video */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#video iframe {
+    position: absolute; /* Position the video element within its container */
+    width: 100%; /* Ensure the video takes the full width of its container */
+    height: 100%; /* Ensure the video takes the full height of its container */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+}
 
 /* Customer Reviews Section */
 #reviews-con {
@@ -413,11 +439,13 @@ button {
 #prev-btn,
 #next-btn {
     background-color: #fff;
-    color: #CC173A;
+    color: #363636;;
     border: none;
     padding: 5px 10px;
     margin: 0 5px;
     cursor: pointer;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
 }
 
 #prev-btn:hover,
@@ -428,36 +456,59 @@ button {
 
 /* Merch Section */
 
-#merch-con h2 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 28px;
-}
-
+/* Centering merch-header */
 #merch-header {
     background-color: #F26200;
     text-align: center;
     border-radius: 10px;
     width: 317px;
     height: 49px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 30px;
 }
 
+/* Centering merch p and merch-title */
+.merch p, .merch-title {
+    text-align: center;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    font-size: 90%;
+}
+
+/* Centering merch button */
+.merch button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+}
+
+/* Additional styling */
 #merch-con {
     height: 852px;
     text-align: center;
-} 
+}
+
+#merch-con h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+}
 
 .merch img {
     width: 150px;
-    height: 150px;
+    /* height: 150px; */
+    margin: 10px 20px 0px 20px;
+
 }
 
 .merch-title {
     max-width: 110px;
+    padding-left: 20px;
 }
 
 .merch {
@@ -484,6 +535,9 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 #store_logos img {
