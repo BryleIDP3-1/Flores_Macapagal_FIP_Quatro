@@ -153,7 +153,6 @@ button {
 
 #about-quatro {
     height: 613px;
-    background-color: rgb(234, 234, 204);
 }
 
 #about-quatro h3 {
@@ -194,7 +193,6 @@ button {
 
 #products {
     height: 300px;
-    background-color: beige;
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -218,7 +216,6 @@ button {
 
 #quatro-history {
     height: 625px;
-    background-color: rgb(234, 234, 204);
 }
 
 #quatro-history h3 {
@@ -334,27 +331,59 @@ button {
     background-color: #CC173A;
     background-size: cover;
     height: 363px;
+    /* overflow-x: auto; */
+    /* white-space: nowrap; */
+}
+
+#reviews-title h3 {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
     text-align: center;
-}
-
-#reviews-wrapper {
-    overflow-x: auto; /* Allow horizontal scrolling */
-    white-space: nowrap; /* Prevent wrapping */
-}
-
-#reviews {
     display: flex;
-    justify-content: center; /* Center the items horizontally */
-   
 }
 
-#reviews > div {
+#reviews-title p {
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+}
+
+#reviews div {
     background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 220px;
-    text-align: center; /* Align content center */
+    border-radius: 15px;
+    width: 163px;
+    height: 226px;
+    margin-top: 15px;
+}
+
+#reviews p {
+    font-weight: 560;
+    font-size: 12px;
+    line-height: 21px;
+    margin-top: 25px;
+}
+
+#reviews img {
+    width: 94px;
+    height: 17px;
+    margin-top: 10px;
+}
+
+#reviews h3 {
+    font-family: "Stopbuck", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#review-1, #review-5 {
+    display: none;
+}
+
+#reviews div * {
+    margin-left: 15px;
 }
 
 /* Merch Section */
@@ -435,13 +464,13 @@ button {
     padding: 20px;
 }
 
-#logo-footer, #logo-socmed {
-    background-color: beige;
+/* #logo-footer, #logo-socmed {
+
 }
 
 #footer-menu, #footer-service {
-    background-color: lightblue;
-}
+
+} */
 
 #credits {
     text-align: center;
