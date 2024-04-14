@@ -27,6 +27,79 @@ button {
     outline: none;
 }
 
+/* JAVASCRIPT LIGHTBOX TEST */
+
+
+.lightbox.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active .lightbox-content {
+    background-color: white; /* Adjust as needed */
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+.lightbox.active .lightbox-close {
+    position: absolute;
+    top: 200px;
+    right: 280px;
+    /* top: 250px;
+    right: 580px;  */
+    /* Adjust the right value to move the close button closer to the lightbox text */
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.lightbox.active h2, .lightbox.active p {
+    text-align: center;
+    /* color: #651799; */
+}
+
+/* Lightbox for product information */
+.lightbox-product {
+    background-color: rgba(0, 0, 0, 0.5); /* Example background color */
+    /* Add additional styling for the product information lightbox */
+}
+
+/* Lightbox for reward claim */
+.lightbox-reward {
+    background-color: rgba(255, 255, 255, 0.8); /* Example background color */
+    /* Add additional styling for the reward claim lightbox */
+}
+
+/* REWARD POP-OVER */
+
+.open-reward {
+    z-index: 999;
+    position: fixed;
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 0px 30px);
+    bottom: 0;
+    left: 0px;
+    margin: 0px 20px;
+    width: 154px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: orange;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #363636;
+}
+
 
 /* HOMEPAGE STYLING */
 
@@ -95,6 +168,10 @@ button {
     margin-top: 7px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+ }
+
+ #main-nav ul li a:hover {
+    text-decoration: underline;
  }
 
  #main-nav ul li:last-child {
@@ -223,15 +300,21 @@ button {
     /* height: 100px; */
 }
 
-.product-name {
-    width: 120px;
-    margin-top: 10px; /* Adjust as needed */
+.lightbox-content #blueberry-info {
+    color: purple;
 }
-/* .product {
 
+.lightbox-content #strawberry-info {
+    color: red;
+}
 
-} */
+.lightbox-content #apple-info {
+    color: green;
+}
 
+.lightbox-content #peachy-burst-info {
+    color: orange;
+}
 /* Quatro's History Section */
 
 #quatro-history {
@@ -373,6 +456,7 @@ button {
     background-size: cover;
     height: 500px;
     overflow: hidden; /* Crop the articles */
+
 }
 
 #reviews-title h2 {
@@ -383,10 +467,15 @@ button {
     text-align: center;
 }
 
+#reviews-title-con {
+    height: 50px;
+}
+
 #reviews-title p {
     font-weight: 700;
     color: white;
     font-size: 18px;
+    text-align: center;
 }
 
 #reviews-wrapper {
@@ -442,7 +531,8 @@ button {
     color: #363636;;
     border: none;
     padding: 5px 10px;
-    margin: 0 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     cursor: pointer;
     border-radius: 15px;
     font-family: "Poppins", sans-serif;
@@ -655,13 +745,6 @@ button {
     color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-    #footer-nav {
-        margin-top: 40px;
-        column-count: 2;
-     }
-}
-
 /* PRODUCT PAGE */
 
 .product-style{
@@ -678,7 +761,7 @@ button {
     border-width: 0; /* Remove the border stroke */
     background-color: white; /* Set the background color to achieve solid color */
     border-radius: 40px;
-    color: #651799;
+    color: #363636;
     display: block;
     margin-top: 10px; /* Adjust this value as needed */
     margin-left: auto;
@@ -697,6 +780,7 @@ button {
 #blueberry-info, #strawberry-info, #apple-info, #peachy-burst-info {
     text-align: center;
 }
+
 
 #blueberry-info > .product-page-name {
     width: 240px;
@@ -829,66 +913,158 @@ button {
 }
 
 
-/* JAVASCRIPT LIGHTBOX TEST */
 
-#blueberry, #peachy, #apple, #scarlet {
-    position: relative;
+/* TABLET SIZE */
+@media screen and (min-width: 768px) {
+    /* Add tablet-specific styles here */
+    body {
+        max-width: 768px;
+        margin: 0 auto; /* Center content */
+    }
+
+/* CUSTOMER REVIEW SECTION */
+
+    #reviews article {
+        background-color: white;
+        border-radius: 15px;
+        width: 200px; 
+        flex-shrink: 0;
+        /* height: 226px; */
+        margin: 0 10px 0 10px; /* Reset margin */
+        padding: 10px;
+        text-align: center;
+    }
+
+/* END CUSTOMER REVIEW SECTION */
+
+/* HEADER MENU NAV */
+
+    #logo img {
+        width: 200px;
+        padding-left: 10px;
+    }
+
+    #main-nav label img {
+    display: none;
+    }
+
+    #burger-con {
+        display:contents;
+     }
+
+     #main-nav {
+        position: absolute;
+        left: 270px;
+        top: -10px;
+        width: 450px;
+     }
+
+     #main-nav ul{
+        background-color: #651799;
+     }
+
+     #main-nav ul li {
+        display: inline;
+     }
+
+    #main-nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+/* END MENU NAV */
+
+
+
+/* FOOTER NAV */
+
+
+    #footer-nav {
+    display: block;
+    margin-top: 40px;
+    padding-top: 0;
+    margin-bottom: 0;
     margin-left: 50px;
+    column-count: 2;
+    }
+
+    #footer-info {
+        display: block;
+    }
+
+    #footer-nav ul {
+        width: 200px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #footer-nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    #logo-socmed {
+        margin-left: 40px;   
+    }
+
+    #footer-info {
+        display: block;
+        margin-left: 40px;
+    }
+
+      /* END FOOTER NAV */
+
+
 }
 
-.lightbox.active {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.lightbox.active .lightbox-content {
-    background-color: white; /* Adjust as needed */
-    padding: 20px;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    width: 500px;
-    height: 200px;
-    text-align: center;
-}
+/* DESKTOP SIZE */
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto; /* Center content */
+    }
 
-.lightbox.active .lightbox-close {
-    position: absolute;
-    top: 200px;
-    right: 280px;
-    /* top: 250px;
-    right: 580px;  */
-    /* Adjust the right value to move the close button closer to the lightbox text */
-    color: white;
-    font-size: 3em;
-    cursor: pointer;
-}
 
-.lightbox.active h2, .lightbox.active p {
-    text-align: center;
-}
+    /* CUSTOMER REVIEW SECTION */
 
-/* REWARD POP-OVER */
+    #slider-buttons {
+        display: none;
+    }
 
-.open-reward {
-    z-index: 999;
-    position: fixed;
-    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 0px 30px);
-    bottom: 0;
-    left: 0px;
-    margin: 0px 20px;
-    width: 154px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: orange;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #363636;
+    /* END CUSTOMER REVIEW SECTION */
+
+
+
+    /* HEADER MENU NAV */
+
+    #main-nav {
+        position: absolute;
+        left: 670px;
+        top: -10px;
+        width: 450px;
+     }
+
+     /* END MENU NAV */
+
+
+    /* FOOTER NAV */
+    #footer-info {
+        display: block;
+        margin-left: 60px;
+    }
+
+    #footer-nav {
+        display: block;
+        margin-top: 40px;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-left: 300px;
+        column-count: 2;
+        }
+    
+    #footer-credits {
+        margin-left: -180px;;
+    }
+
+    /* END FOOTER NAV */
 }
