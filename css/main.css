@@ -862,20 +862,47 @@ button {
 
 #hero-banner-contact {
     background-color: rgb(106, 29, 179);
-    height: 470px;
+    height: 300px;
     display: flex;
     justify-content: center;
 }
 
+
 #contact-form-con {
-    background-color: beige; /* Adjust background color as needed */
-    /* height: 200px;  */
+    background-size: cover;
+    /* height: 600px; */
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-#contact-form-con input, textarea {
+#contact-form-con form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form-con h3 {
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin-left: 15px;
+    margin-top: 50px;
+    color: #941ED6;
+    max-width: 480px;
+    margin-bottom: 25px;
+    font-family: "Stopbuck", sans-serif;
+    letter-spacing: 1px;
+}
+#contact-form-con p {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+color: #363636;
+
+}
+#contact-form-con input,
+#contact-form-con textarea {
     padding: 22px;
     border: 2px solid #d6d6d6;
     background-color: #f7f7f7;
@@ -883,12 +910,19 @@ button {
     margin-bottom: 30px;
     font: inherit;
     width: 60%;
- }
- 
+    color: #363636; /* Adjust text color */
+}
+
+#contact-form-con input::placeholder,
+#contact-form-con textarea::placeholder {
+    color: #AF77DB; /* Adjust placeholder color */
+    padding-left: 5px;
+}
+
 #contact-form-con textarea {
-    height: 250px;
- }
- 
+    height: 200px;
+}
+
 #contact-form-con input[type="submit"] {
     padding: 12px 28px;
     background: #721AAE;
@@ -897,12 +931,12 @@ button {
     transition: all 200ms ease-in;
     width: 150px;
     align-self: flex-end;
- }
- 
-#contact-hero-form input[type="submit"]:hover {
+}
+
+#contact-form-con input[type="submit"]:hover {
     background-color: #A44CE1;
     border-radius: 0;
- }
+}
 
 .input-group {
     display: flex;
@@ -912,9 +946,8 @@ button {
 
 .input-group input {
     flex: 1;
-    margin-right: 10px; /* Adjust spacing between inputs */
+    margin-right: 10px;
 }
-
 
 
 /* TABLET MEDIA QUERIES */
