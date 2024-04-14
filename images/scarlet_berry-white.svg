@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 118.8 67.1">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 39.9px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill: #fff;
+        font-family: Stopbuck, Stopbuck;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 29.1px;
+      }
+    </style>
+  </defs>
+  <g id="Export">
+    <g id="Group_1012" data-name="Group 1012">
+      <g id="BERRY" class="cls-2">
+        <g class="cls-2">
+          <text class="cls-1" transform="translate(1.4 62)"><tspan x="0" y="0">BERRY</tspan></text>
+        </g>
+      </g>
+      <g id="SCARLET" class="cls-2">
+        <g class="cls-2">
+          <text class="cls-3" transform="translate(0 24.8)"><tspan x="0" y="0">S</tspan></text>
+          <text class="cls-4" transform="translate(18.6 24.8)"><tspan x="0" y="0">CARLET</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

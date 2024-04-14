@@ -665,32 +665,93 @@ button {
 /* PRODUCT PAGE */
 
 .product-style{
-    height: 680px;
-    padding-top: 100px;
+    height: 400px;
+    padding-top: 50px;
+
 }
+
+
+.info-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 120%;
+    border-width: 0; /* Remove the border stroke */
+    background-color: white; /* Set the background color to achieve solid color */
+    border-radius: 40px;
+    color: #651799;
+    display: block;
+    margin-top: 10px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 150px;
+}
+
+
+#blueberry-image, #strawberry-image, #apple-image, #orange-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blueberry-info, #strawberry-info, #apple-info, #peachy-burst-info {
+    text-align: center;
+}
+
+#blueberry-info > .product-page-name {
+    width: 240px;
+    margin-top: 10px;
+}
+
+#strawberry-info > .product-page-name {
+    width: 240px;
+    margin-top: 10px;
+}
+
+#apple-info > .product-page-name {
+    width: 240px;
+    margin-top: 10px;
+}
+
+#peachy-burst-info > .product-page-name {
+    width: 240px;
+    margin-top: 10px;
+}
+
+.quatro_logo_wcolor {
+    width: 200px;
+    margin-top: 30px;
+}
+
+
 
 #product-grape {
     background-color: rgb(114, 29, 195);
     height: 950px;
-    display: flex;
+    display: block;
+    justify-content: center;
 }
 
 #product-strawberry {
     background-color: #CC173A;
     height: 950px;
-    display: flex;
+    display: block;
+    justify-content: center;
 }
+
 
 #product-apple {
     background-color: #329B13;
     height: 950px;
-    display: flex;
+    display: block;
+    justify-content: center;
 }
 
 #product-orange {
     background-color:#F26200;
     height: 950px;
-    display: flex;
+    display: block;
+    justify-content: center;
 }
 
 
