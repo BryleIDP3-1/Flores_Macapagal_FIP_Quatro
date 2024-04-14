@@ -456,6 +456,7 @@ button {
 
 /* Footer Section */
 
+
 #footer-con {
     background-color: #651799;
 }
@@ -464,18 +465,63 @@ button {
     padding: 20px;
 }
 
-/* #logo-footer, #logo-socmed {
-
+#logo-socmed img {
+    width: 30px;
 }
 
-#footer-menu, #footer-service {
+#logo-footer img {
+    width: 230px;
+    margin-top: 30px;
+}
 
-} */
-
-#credits {
+#footer-credits {
     text-align: center;
+    color: #ffffff;
 }
 
+
+#footer-info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-footer,
+#logo-socmed {
+    justify-self: center;
+}
+
+#footer-nav,
+#footer-service {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#footer-nav ul,
+#footer-service ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer-nav li,
+#footer-service li {
+    display: block; /* Change display to block */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+#footer-nav a,
+#footer-service a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    #footer-nav {
+        margin-top: 40px;
+        column-count: 2;
+     }
+}
 
 /* PRODUCT PAGE */
 
