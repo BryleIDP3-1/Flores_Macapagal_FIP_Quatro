@@ -38,22 +38,30 @@
 <h1 class="hidden">Quatro's Home</h1>
 
 <!-- Navigation Menu Section -->
-    <header class="full-width-grid-con">
-    <h2 class="hidden">Navigation Bar</h2>
+
+    <header id="nav-con" class="grid-con">
+     <h2 class="hidden">Navigation Bar</h2>
         
-        <div class="grid-con">
-        <img src="images/quatro_logo.svg" id="main_logo" alt="Quatro Main Logo"
-        class="col-start-1 col-end-3 m-col-span-full l-col-span-full">
-        <nav id="main-nav" class="col-span-full m-col-start-7 m-col-end-11 l-col-start-7 l-col-end-11">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav> 
-        </div>
-    </header>
+         <div id="logo" class="col-span-full">
+         <img src="images/quatro_logo.svg" alt="Quatro Main Logo">
+         </div>
+         <nav id="main-nav" class="col-span-full">
+         <input type="checkbox" id="hamburger">
+         <label for="hamburger">
+             <img src="images/burger_menu.svg" alt="hamburger menu icon">
+         </label>
+         <div id="burger-con">
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="products.html">Products</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+             </ul>
+         </div>
+         </nav>
+      
+     </header>
+    
 
 <!-- Reward Button Section -->
     <button class="open-reward">Reward Here</button>
