@@ -1,43 +1,66 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Function to show the lightbox
-    function showLightbox(title, tasteBuds, ingredients) {
+    function showLightbox(productName, tasteBuds, ingredients, lightboxType) {
+        // Define the class for the lightbox based on the type
+        var lightboxClass = lightboxType === 'reward' ? 'lightbox-reward' : 'lightbox-product';
+
         // Create HTML content for the lightbox
         var lightboxContent = `
-            <div class="lightbox active">
+            <div class="lightbox ${lightboxClass} active">
                 <div class="lightbox-content">
                     <span class="lightbox-close">&times;</span>
-                    <h2>${title}</h2>
+                    <h2>${productName}</h2>
                     <h4>${tasteBuds}</h4>
                     <p class="ingredients">${ingredients}</p>
                 </div>
             </div>
         `;
 
-
         // Append the lightbox content to the body
         document.body.insertAdjacentHTML('beforeend', lightboxContent);
 
-
         // Add click event listener to close the lightbox
-        var closeButton = document.querySelector('.lightbox .lightbox-close');
+        var closeButton = document.querySelector(`.${lightboxClass} .lightbox-close`);
         closeButton.addEventListener('click', function() {
-            var lightbox = document.querySelector('.lightbox');
+            var lightbox = document.querySelector(`.${lightboxClass}`);
             lightbox.remove();
             // Re-enable the open-reward button
             openRewardButton.disabled = false;
         });
     }
 
+    // Function to handle form submission
+    function handleFormSubmission(email) {
+        console.log('Email submitted:', email);
+        // Optionally, you can close the current lightbox
+        var lightbox = document.querySelector('.lightbox');
+        lightbox.remove();
+        // Show the subscription confirmation lightbox
+        showSubscriptionConfirmation();
+    }
+
+    // Function to show the "Thank you for subscribing!" lightbox
+    function showSubscriptionConfirmation() {
+        showLightbox("Thank you for subscribing!", "We've received your email. Enjoy your reward!", "", "reward");
+    }
+
+    // Get the open-reward button
+    var openRewardButton = document.querySelector('.open-reward');
+
+    // Add click event listener to the open-reward button
+    openRewardButton.addEventListener('click', function() {
+        // Call the function to show the reward claim lightbox
+        showRewardClaimLightbox();
+    });
 
     // Function to show the reward claim lightbox
     function showRewardClaimLightbox() {
         // Disable the open-reward button
         openRewardButton.disabled = true;
 
-
         // Create HTML content for the lightbox
         var lightboxContent = `
-            <div class="lightbox active">
+            <div class="lightbox reward active">
                 <div class="lightbox-content">
                     <span class="lightbox-close">&times;</span>
                     <h2>Claim your reward!</h2>
@@ -50,10 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
 
-
         // Append the lightbox content to the body
         document.body.insertAdjacentHTML('beforeend', lightboxContent);
-
 
         // Add submit event listener to the claimRewardForm
         var claimRewardForm = document.getElementById('claimRewardForm');
@@ -63,64 +84,23 @@ document.addEventListener('DOMContentLoaded', function() {
             handleFormSubmission(email);
         });
 
-
         // Add click event listener to close the lightbox
-        var closeButton = document.querySelector('.lightbox .lightbox-close');
+        var closeButton = document.querySelector('.lightbox.reward .lightbox-close');
         closeButton.addEventListener('click', function() {
-            var lightbox = document.querySelector('.lightbox');
+            var lightbox = document.querySelector('.lightbox.reward');
             lightbox.remove();
             // Re-enable the open-reward button
             openRewardButton.disabled = false;
         });
     }
 
-
-    // Function to handle form submission
-    function handleFormSubmission(email) {
-        console.log('Email submitted:', email);
-        // Optionally, you can close the current lightbox
-        var lightbox = document.querySelector('.lightbox');
-        lightbox.remove();
-        // Show the subscription confirmation lightbox
-        showSubscriptionConfirmation();
+    // Function to show the lightbox with product details
+    function showProductLightbox(productName, productTasteBuds, productIngredients) {
+        showLightbox(productName, productTasteBuds, productIngredients, "product");
     }
-
-
-    // Function to show the "Thank you for subscribing!" lightbox
-    function showSubscriptionConfirmation() {
-        showLightbox("Thank you for subscribing!", "We've received your email. Enjoy your reward!");
-    }
-
-
-    // Get the open-reward button
-    var openRewardButton = document.querySelector('.open-reward');
-
-
-    // Add click event listener to the open-reward button
-    openRewardButton.addEventListener('click', function() {
-        // Call the function to show the reward claim lightbox
-        showRewardClaimLightbox();
-    });
-
-
-    // Hide h4 and p tags initially
-    var tasteBuds = document.querySelectorAll('.taste-buds');
-    var ingredients = document.querySelectorAll('.ingredients');
-
-
-    tasteBuds.forEach(function(tasteBud) {
-        tasteBud.style.display = 'none';
-    });
-
-
-    ingredients.forEach(function(ingredient) {
-        ingredient.style.display = 'none';
-    });
-
 
     // Get all the "MORE INFO" buttons
     var infoButtons = document.querySelectorAll('.info-button');
-
 
     // Add click event listener to each "MORE INFO" button
     infoButtons.forEach(function(button) {
@@ -128,26 +108,40 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get the parent product div
             var productDiv = button.closest('.full-width-grid-con');
 
-
             // Retrieve product information
             var productName = productDiv.querySelector('h3').textContent;
             var productTasteBuds = productDiv.querySelector('.taste-buds').textContent;
             var productIngredients = productDiv.querySelector('.ingredients').textContent;
 
-
             // Call the function to show the lightbox with product details
-            showLightbox(productName, productTasteBuds, productIngredients);
+            showProductLightbox(productName, productTasteBuds, productIngredients);
         });
     });
 
+    // Hide h3 tags initially
+    var productNames = document.querySelectorAll('.product-name');
+
+    productNames.forEach(function(productName) {
+        productName.style.display = 'none';
+    });
+
+    // Hide h4 and p tags initially
+    var tasteBuds = document.querySelectorAll('.taste-buds');
+    var ingredients = document.querySelectorAll('.ingredients');
+
+    tasteBuds.forEach(function(tasteBud) {
+        tasteBud.style.display = 'none';
+    });
+
+    ingredients.forEach(function(ingredient) {
+        ingredient.style.display = 'none';
+    });
 
     // Array to store clicked button information
     var clickedButtonsInfo = [];
 
-
     // Get all the info icons
     var infoIcons = document.querySelectorAll('.info-icon');
-
 
     // Add click event listener to each info icon
     infoIcons.forEach(function(icon) {
@@ -155,17 +149,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Get the parent div containing the product information
             var parentDiv = icon.parentElement;
 
-
             // Retrieve product information
             var productName = parentDiv.querySelector('h3').textContent;
             var productDescription = parentDiv.querySelector('p').textContent;
             var productAdditionalInfo = parentDiv.querySelector('h4').textContent; // Include h4 content
 
-
             // Log product information to console
             console.log("Product Name:", productName);
             console.log("Product Description:", productDescription);
-
 
             // Store clicked button information in the array
             clickedButtonsInfo.push({
@@ -173,7 +164,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 productDescription: productDescription,
                 productAdditionalInfo: productAdditionalInfo
             });
-
 
             // Create HTML content for the lightbox
             var lightboxContent = `
@@ -187,10 +177,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `;
 
-
             // Append the lightbox content to the body
             document.body.insertAdjacentHTML('beforeend', lightboxContent);
-
 
             // Add click event listener to close the lightbox
             var closeButton = document.querySelector('.lightbox .lightbox-close');
@@ -203,7 +191,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
     // Hide h4 and p tags inside product divs
     var productDivs = document.querySelectorAll('#blueberry, #peachy, #apple, #scarlet');
     productDivs.forEach(function(div) {
@@ -211,7 +198,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (h4Tag) {
             h4Tag.style.display = 'none';
         }
-
 
         var pTag = div.querySelector('p');
         if (pTag) {
@@ -243,5 +229,3 @@ document.addEventListener('DOMContentLoaded', function () {
         slide(-1);
     });
 });
-
-
