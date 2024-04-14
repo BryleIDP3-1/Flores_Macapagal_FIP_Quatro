@@ -11,6 +11,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: #363636;
     max-width: 412px;
+    /* overflow-x: hidden; */
 }
 
 @font-face {
@@ -68,33 +69,54 @@ header {
 /* Features Section */
 
 #features {
-    height: 100px;
-    background-color: beige;
+    height: 505px;
+    margin-top: 45px;
+    text-align: center;
+    place-items: center;
+}
+
+#features div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
-}
-
-#features h3 {
-    font-family: "Stopbuck", sans-serif;
-    font-size: 32px;
-    letter-spacing: 1px;
-}
-
-#features p {
-    font-size: 17px;
-    font-weight: 700;
+    align-items: center;
 }
 
 .feature_icon {
     width: 105px;
 }
 
+#features h3 {
+    font-family: "Stopbuck", sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    max-width: 180px;
+    margin-top: 25px;
+    margin-bottom: 1px;
+}
+
+#features p {
+    font-size: 17px;
+    font-weight: 800;
+}
 /* What's Quatro Section */
 
 #about-quatro {
-    height: 450px;
+    height: 613px;
     background-color: rgb(234, 234, 204);
+}
+
+#about-quatro h3 {
+    font-family: "Stopbuck", sans-serif;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #721AAE;
+}
+
+#about-quatro p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
 }
 
 /* Products Home Section */
@@ -118,11 +140,38 @@ header {
     padding-top: 30px;
 }
 
+#products img {
+    width: 150px;
+    height: 150px;
+}
+
+.heading-cards {
+    font-family: "Stopbuck", sans-serif;
+    letter-spacing: 1px;
+}
+
+.desc-cards {
+    font-weight: 700;
+}
+
 /* Quatro's History Section */
 
 #quatro-history {
-    height: 450px;
+    height: 625px;
     background-color: rgb(234, 234, 204);
+}
+
+#quatro-history h3 {
+    font-family: "Stopbuck", sans-serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+    color: #277C10;
+}
+
+#quatro-history p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
 }
 
 /* Quote Section */
@@ -134,20 +183,40 @@ header {
     height: 437px;
 
     display: flex;
-    justify-content: center;
-    text-align: center;
+    color: white;
+}
+
+#quote h3 {
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin-left: 15px;
+    margin-top: 110px;
+}
+
+#quote p {
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-bottom: 500px;
 }
 
 /* Gallery Section */
 
-#follow-us-button {
-    background-color: red;
+#follow-us-text {
+    background-color: #CC173A;
     text-align: center;
+    font-size: 24px;
     border-radius: 15px;
+    width: 319px;
+    height: 44px;
 }
 
-#follow-us {
-    background-color: rgb(234, 234, 204);
+#follow-us-text h3 {
+    text-transform: uppercase;
+    color: white;
 }
 
 #gallery {
@@ -157,25 +226,36 @@ header {
   }
 
 #gallery img {
-    height: 330px;
-    background-color: blueviolet;
-    padding: 50px 0 50px 0;
-    margin: 10px 10px 10px 10px;
+    height: 272px;
 }
 
-/* Merchandise Section */
-
-#ceo-message {
-    text-align: center;
-  }
+/* CEO Message Section */
 
 #ceo-message-con {
-    background-color: beige;
+    height: 827px;
 }
- 
-#ceo-message div {
-    margin-bottom: 20px; /* Add spacing between the text and video */
+
+#ceo-message h3 {
+    font-family: "Stopbuck", sans-serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+    color: #721AAE;
   }
+
+#ceo-message p {
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+#ceo-message h4 {
+    font-weight: 800;
+    font-size: 21px;
+    color:#941ED6;
+}
+
+#president-text {
+    color:#363636;
+}
 
 #video {
     display: flex;
@@ -183,7 +263,8 @@ header {
     justify-content: center;
     align-items: center;
     background-color: purple;
-    height: 300px;
+    width: 325px;
+    height: 185px;
   }
 
 /* Customer Reviews Section */
@@ -235,10 +316,8 @@ header {
   }
 
 #merch-gallery img {
-    height: 300px;
-    background-color: blueviolet;
-    padding: 50px 0 50px 0;
-    margin: 10px 10px 10px 10px;
+    width: 150px;
+    height: 150px;
 }
 
 /* Available Stores Section */
