@@ -232,6 +232,7 @@ button {
     font-size: 17px;
     font-weight: 800;
 }
+
 /* What's Quatro Section */
 
 #about-quatro {
@@ -307,22 +308,6 @@ button {
 
 .product button {
     margin-bottom: 20px;
-}
-
-.lightbox-content #blueberry-info {
-    color: purple;
-}
-
-.lightbox-content #strawberry-info {
-    color: red;
-}
-
-.lightbox-content #apple-info {
-    color: green;
-}
-
-.lightbox-content #peachy-burst-info {
-    color: orange;
 }
 
 /* Quatro's History Section */
@@ -958,6 +943,74 @@ color: #363636;
         margin: 0 auto;
     }
 
+    .hero-home {
+        background-image: url('../images/home_header_768.png');
+        height: 284px;
+    }
+
+    #features {
+        height: 249px;
+        margin-top: 45px;
+        margin-bottom: 60px;
+    }
+
+    #features h3 {
+        font-size: 25px;
+    }
+    
+    #features p {
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    #about-quatro {
+        height: 285px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+
+    #about-quatro h3 {
+        font-size: 35px;
+    }
+    
+    #about-quatro p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    #about-quatro img {
+        width: 194px;
+    }
+
+    #product-title {
+        background-image: url('../images/drinks_bg_768.png');
+    }
+
+    #quote {
+        background-image: url('../images/quote_bg_768.png');
+    }
+        
+    #reviews-con {
+        position: relative; 
+        background-image: url('../images/review_bg_768.png');
+    }
+
+    #newsletter-con {
+        background-image: url('../images/news_bg_768.png');
+    }
+
+    #quatro-history {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #quatro-history img {
+        width: 194px;
+    }
+
+
 /* CUSTOMER REVIEW SECTION */
 
     #reviews article {
@@ -968,7 +1021,6 @@ color: #363636;
         /* height: 226px; */
         margin: 0 10px 0 10px; /* Reset margin */
         padding: 10px;
-        text-align: center;
     }
 
 /* HEADER MENU NAV */
@@ -1005,8 +1057,6 @@ color: #363636;
         display: inline-block;
         margin: 0 15px;
     }
-
-/* END MENU NAV */
 
 /* FOOTER NAV */
 
@@ -1052,6 +1102,10 @@ color: #363636;
         margin: 0 auto; /* Center content */
     }
 
+    .hero-home {
+        background-image: url('../images/home_header_1200.png');
+    }
+
     #main-nav ul li a:hover {
         text-decoration: underline;
     }
@@ -1090,4 +1144,21 @@ color: #363636;
     #footer-credits {
         margin-left: -180px;;
     }
+
+    #product-title {
+        background-image: url('../images/drinks_bg_1200.png');
+    }
+
+    #quote {
+        background-image: url('../images/quote_bg_1200.png');
+    }
+        
+    #reviews-con {
+        position: relative; 
+        background-image: url('../images/review_bg_1200.png');
+    }
+
+    #newsletter-con {
+        background-image: url('../images/news_bg_1200.png');
+}
 }
