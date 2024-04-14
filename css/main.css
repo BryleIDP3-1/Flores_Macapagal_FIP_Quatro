@@ -203,11 +203,6 @@ button {
     height: 150px;
 }
 
-.heading-cards {
-    font-family: "Stopbuck", sans-serif;
-    letter-spacing: 1px;
-}
-
 .desc-cards {
     font-weight: 700;
 }
@@ -392,19 +387,17 @@ button {
     height: 852px;
 } 
 
+.merch {
+    width: 150px;
+}
+
 #merch-button {
     background-color: rgb(255, 123, 0);
     text-align: center;
     border-radius: 15px;
 }
 
-#merch-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-#merch-gallery img {
+.merch img {
     width: 150px;
     height: 150px;
 }
