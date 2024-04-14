@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.67 62.66">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        font-size: 36.29px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #f26200;
+        font-family: Stopbuck, Stopbuck;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3 {
+        font-size: 29.12px;
+      }
+    </style>
+  </defs>
+  <g id="Export">
+    <g id="Group_1064" data-name="Group 1064">
+      <g id="BURST" class="cls-1">
+        <text class="cls-2" transform="translate(0 57.98)"><tspan x="0" y="0">BURST</tspan></text>
+      </g>
+      <g id="PEACHY" class="cls-1">
+        <text class="cls-3" transform="translate(1.34 24.82)"><tspan x="0" y="0">PE</tspan><tspan class="cls-4" x="31.54" y="0">A</tspan><tspan x="50.67" y="0">CHY</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

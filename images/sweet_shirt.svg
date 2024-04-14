@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.39 62.91">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 35.4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #941ed6;
+        font-family: Stopbuck, Stopbuck;
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        font-size: 30.39px;
+      }
+    </style>
+  </defs>
+  <g id="Export">
+    <g id="Group_1061" data-name="Group 1061">
+      <g id="CRUSH">
+        <text class="cls-1" transform="translate(0 58.34)"><tspan x="0" y="0">SHIRT</tspan></text>
+      </g>
+      <g id="BLUEBERRY">
+        <text class="cls-2" transform="translate(0 25.9)"><tspan x="0" y="0">SWEET</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
