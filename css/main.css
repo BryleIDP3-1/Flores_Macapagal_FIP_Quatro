@@ -383,23 +383,40 @@ button {
 
 /* Merch Section */
 
+#merch-con h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+#merch-header {
+    background-color: #F26200;
+    text-align: center;
+    border-radius: 10px;
+    width: 317px;
+    height: 49px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #merch-con {
     height: 852px;
-} 
-
-.merch {
-    width: 150px;
-}
-
-#merch-button {
-    background-color: rgb(255, 123, 0);
     text-align: center;
-    border-radius: 15px;
-}
+} 
 
 .merch img {
     width: 150px;
     height: 150px;
+}
+
+#merch-con h3 img {
+    max-width: 110px;
+}
+
+.merch {
+    width: 150px;
 }
 
 /* Available Stores Section */
@@ -438,13 +455,45 @@ button {
 
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 #newsletter-con form {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#newsletter-con h3 {
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin-left: 15px;
+    margin-top: 110px;
+    color: white;
+    max-width: 340px;
+    margin-bottom: 25px;
+}
+
+#newsletter_box input {
+    width: 320px;
+    height: 35px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #363636;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #277C10;
+    border-radius: 0;
+}
+
+#newsletter_box input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #90B687;
+    padding-left: 5px;
 }
 
 /* Footer Section */
