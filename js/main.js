@@ -1,66 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Function to show the lightbox
-    function showLightbox(productName, tasteBuds, ingredients, lightboxType) {
-        // Define the class for the lightbox based on the type
+    function showLightbox(content, lightboxType) {
         var lightboxClass = lightboxType === 'reward' ? 'lightbox-reward' : 'lightbox-product';
-
-        // Create HTML content for the lightbox
-        var lightboxContent = `
-            <div class="lightbox ${lightboxClass} active">
+        var lightboxContent = `<div class="lightbox ${lightboxClass} active">
                 <div class="lightbox-content">
-                    <span class="lightbox-close">&times;</span>
-                    <h2>${productName}</h2>
-                    <h4>${tasteBuds}</h4>
-                    <p class="ingredients">${ingredients}</p>
+                    <span class="lightbox-close">&times;</span>${content}
                 </div>
-            </div>
-        `;
-
-        // Append the lightbox content to the body
+            </div>`;
         document.body.insertAdjacentHTML('beforeend', lightboxContent);
-
-        // Add click event listener to close the lightbox
         var closeButton = document.querySelector(`.${lightboxClass} .lightbox-close`);
-        closeButton.addEventListener('click', function() {
-            var lightbox = document.querySelector(`.${lightboxClass}`);
-            lightbox.remove();
-            // Re-enable the open-reward button
-            openRewardButton.disabled = false;
+        closeButton.addEventListener('click', function () {
+            document.querySelector(`.${lightboxClass}`).remove();
+            if (lightboxType === 'reward') openRewardButton.disabled = false;
         });
     }
+
 
     // Function to handle form submission
     function handleFormSubmission(email) {
         console.log('Email submitted:', email);
-        // Optionally, you can close the current lightbox
-        var lightbox = document.querySelector('.lightbox');
-        lightbox.remove();
-        // Show the subscription confirmation lightbox
-        showSubscriptionConfirmation();
+        document.querySelector('.lightbox').remove();
+        showLightbox("Thank you for subscribing!", "reward");
     }
 
-    // Function to show the "Thank you for subscribing!" lightbox
-    function showSubscriptionConfirmation() {
-        showLightbox("Thank you for subscribing!", "We've received your email. Enjoy your reward!", "", "reward");
-    }
-
-    // Get the open-reward button
-    var openRewardButton = document.querySelector('.open-reward');
-
-    // Add click event listener to the open-reward button
-    openRewardButton.addEventListener('click', function() {
-        // Call the function to show the reward claim lightbox
-        showRewardClaimLightbox();
-    });
 
     // Function to show the reward claim lightbox
     function showRewardClaimLightbox() {
-        // Disable the open-reward button
         openRewardButton.disabled = true;
-
-        // Create HTML content for the lightbox
-        var lightboxContent = `
-            <div class="lightbox reward active">
+        var lightboxContent = `<div class="lightbox reward active">
                 <div class="lightbox-content">
                     <span class="lightbox-close">&times;</span>
                     <h2>Claim your reward!</h2>
@@ -70,162 +37,97 @@ document.addEventListener('DOMContentLoaded', function() {
                         <button type="submit">Claim</button>
                     </form>
                 </div>
-            </div>
-        `;
-
-        // Append the lightbox content to the body
+            </div>`;
         document.body.insertAdjacentHTML('beforeend', lightboxContent);
-
-        // Add submit event listener to the claimRewardForm
         var claimRewardForm = document.getElementById('claimRewardForm');
-        claimRewardForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
+        claimRewardForm.addEventListener('submit', function (event) {
+            event.preventDefault();
             var email = document.getElementById('emailInput').value;
             handleFormSubmission(email);
         });
-
-        // Add click event listener to close the lightbox
         var closeButton = document.querySelector('.lightbox.reward .lightbox-close');
-        closeButton.addEventListener('click', function() {
-            var lightbox = document.querySelector('.lightbox.reward');
-            lightbox.remove();
-            // Re-enable the open-reward button
+        closeButton.addEventListener('click', function () {
+            document.querySelector('.lightbox.reward').remove();
             openRewardButton.disabled = false;
         });
     }
 
+
     // Function to show the lightbox with product details
     function showProductLightbox(productName, productTasteBuds, productIngredients) {
-        showLightbox(productName, productTasteBuds, productIngredients, "product");
+        var content = `<h2>${productName}</h2><h4>${productTasteBuds}</h4><p class="ingredients">${productIngredients}</p>`;
+        showLightbox(content, "product");
     }
 
-    // Get all the "MORE INFO" buttons
+
+    // Event listener for open-reward button
+    var openRewardButton = document.querySelector('.open-reward');
+    openRewardButton.addEventListener('click', showRewardClaimLightbox);
+
+
+    // Event listener for MORE INFO buttons
     var infoButtons = document.querySelectorAll('.info-button');
-
-    // Add click event listener to each "MORE INFO" button
-    infoButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            // Get the parent product div
+    infoButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
             var productDiv = button.closest('.full-width-grid-con');
-
-            // Retrieve product information
             var productName = productDiv.querySelector('h3').textContent;
             var productTasteBuds = productDiv.querySelector('.taste-buds').textContent;
             var productIngredients = productDiv.querySelector('.ingredients').textContent;
-
-            // Call the function to show the lightbox with product details
             showProductLightbox(productName, productTasteBuds, productIngredients);
+            console.log("Product Name:", productName);
+            console.log("Taste Buds:", productTasteBuds);
+            console.log("Ingredients:", productIngredients);
         });
     });
 
-    // Hide h3 tags initially
-    var productNames = document.querySelectorAll('.product-name');
 
-    productNames.forEach(function(productName) {
-        productName.style.display = 'none';
+    // Hide specific tags initially
+    document.querySelectorAll('.product-name, .taste-buds, .ingredients').forEach(function (elem) {
+        elem.style.display = 'none';
     });
 
-    // Hide h4 and p tags initially
-    var tasteBuds = document.querySelectorAll('.taste-buds');
-    var ingredients = document.querySelectorAll('.ingredients');
 
-    tasteBuds.forEach(function(tasteBud) {
-        tasteBud.style.display = 'none';
-    });
-
-    ingredients.forEach(function(ingredient) {
-        ingredient.style.display = 'none';
-    });
-
-    // Array to store clicked button information
-    var clickedButtonsInfo = [];
-
-    // Get all the info icons
+   
+    // Event listener for info icons
     var infoIcons = document.querySelectorAll('.info-icon');
-
-    // Add click event listener to each info icon
-    infoIcons.forEach(function(icon) {
-        icon.addEventListener('click', function() {
-            // Get the parent div containing the product information
+    infoIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
             var parentDiv = icon.parentElement;
-
-            // Retrieve product information
             var productName = parentDiv.querySelector('h3').textContent;
             var productDescription = parentDiv.querySelector('p').textContent;
-            var productAdditionalInfo = parentDiv.querySelector('h4').textContent; // Include h4 content
-
-            // Log product information to console
+            var productAdditionalInfo = parentDiv.querySelector('h4').textContent;
             console.log("Product Name:", productName);
             console.log("Product Description:", productDescription);
-
-            // Store clicked button information in the array
-            clickedButtonsInfo.push({
-                productName: productName,
-                productDescription: productDescription,
-                productAdditionalInfo: productAdditionalInfo
-            });
-
-            // Create HTML content for the lightbox
-            var lightboxContent = `
-                <div class="lightbox active">
-                    <div class="lightbox-content">
-                        <span class="lightbox-close">&times;</span>
-                        <h2>${productName}</h2>
-                        <h4>${productAdditionalInfo}</h4> <!-- Include h4 content -->
-                        <p>${productDescription}</p>
-                    </div>
-                </div>
-            `;
-
-            // Append the lightbox content to the body
-            document.body.insertAdjacentHTML('beforeend', lightboxContent);
-
-            // Add click event listener to close the lightbox
-            var closeButton = document.querySelector('.lightbox .lightbox-close');
-            closeButton.addEventListener('click', function() {
-                var lightbox = document.querySelector('.lightbox');
-                lightbox.remove();
-                // Re-enable the open-reward button
-                openRewardButton.disabled = false;
-            });
+            console.log("Product Additional Info:", productAdditionalInfo);
+            var content = `<h2>${productName}</h2><h4>${productAdditionalInfo}</h4><p>${productDescription}</p>`;
+            showLightbox(content, "product");
         });
     });
+
 
     // Hide h4 and p tags inside product divs
     var productDivs = document.querySelectorAll('#blueberry, #peachy, #apple, #scarlet');
-    productDivs.forEach(function(div) {
-        var h4Tag = div.querySelector('h4');
-        if (h4Tag) {
-            h4Tag.style.display = 'none';
-        }
-
-        var pTag = div.querySelector('p');
-        if (pTag) {
-            pTag.style.display = 'none';
-        }
+    productDivs.forEach(function (div) {
+        div.querySelectorAll('h4, p').forEach(function (elem) {
+            elem.style.display = 'none';
+        });
     });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+
+    // Console log for reviews
     const reviewsWrapper = document.getElementById('reviews');
     const prevButton = document.getElementById('prev-btn');
     const nextButton = document.getElementById('next-btn');
-    let currentPosition = 0;
-    const articleWidth = reviewsWrapper.querySelector('article').offsetWidth;
-    const numArticles = reviewsWrapper.childElementCount;
-    const maxPosition = -580; // Maximum translateX value
-
-    function slide(direction) {
-        currentPosition += direction * articleWidth;
-        currentPosition = Math.max(Math.min(currentPosition, 0), maxPosition);
-        reviewsWrapper.style.transform = `translateX(${currentPosition}px)`;
+    if (reviewsWrapper && reviewsWrapper.querySelector('article')) {
+        let currentPosition = 0;
+        const articleWidth = reviewsWrapper.querySelector('article').offsetWidth;
+        const maxPosition = -580;
+        function slide(direction) {
+            currentPosition += direction * articleWidth;
+            currentPosition = Math.max(Math.min(currentPosition, 0), maxPosition);
+            reviewsWrapper.style.transform = `translateX(${currentPosition}px)`;
+        }
+        prevButton.addEventListener('click', () => slide(1));
+        nextButton.addEventListener('click', () => slide(-1));
     }
-
-    prevButton.addEventListener('click', function () {
-        slide(1);
-    });
-
-    nextButton.addEventListener('click', function () {
-        slide(-1);
-    });
 });
