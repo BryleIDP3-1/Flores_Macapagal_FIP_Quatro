@@ -27,7 +27,6 @@ button {
     outline: none;
 }
 
-
 /* JAVASCRIPT LIGHTBOX */
 
 .lightbox.active {
@@ -64,7 +63,6 @@ button {
 
 .lightbox.active h2 {
     text-align: center;
-    
 }
 
 .lightbox.active p {
@@ -83,22 +81,39 @@ button {
 }
 
 .lightbox.active .lightbox-content {
-    position: relative; /* Make the lightbox content relative */
+    position: relative; 
     background-color: #651799;
       
 }
 
 .lightbox.active .lightbox-close {
-    position: absolute; /* Remove absolute positioning */
-    top: 10px; /* Adjust top position as needed */
-    right: 10px; /* Adjust right position as needed */
-    color: white; /* Change color to make it visible */
-    font-size: 2em; /* Adjust font size as needed */
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    color: white; 
+    font-size: 2em; 
     cursor: pointer;
-    z-index: 1; /* Ensure it appears above the lightbox content */
+    z-index: 1; 
 }
 
+/* Claim reward button styling */
+.lightbox.active .lightbox-content button {
+    background-color: orange;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.lightbox.active .lightbox-content button:hover {
+    background-color: white;
+    color: orange;
+}
 
 /* REWARD POP-OVER */
 
@@ -109,15 +124,16 @@ button {
     bottom: 0;
     left: 0px;
     margin: 0px 20px;
-    width: 154px;
+    width: 180px;
     cursor: pointer;
     font-size: 20px;
     background-color: orange;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #363636;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
-
 
 /* HOMEPAGE STYLING */
 
@@ -147,7 +163,6 @@ button {
     top: 20px;
     right: 20px;
 }
-
  
 /* BURGER MENU SIBLING SELECTOR */
 
@@ -314,7 +329,6 @@ button {
 
 #quatro-history {
     height: 625px;
-
 }
 
 #quatro-history h3 {
@@ -391,12 +405,14 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: -90px;
   }
 
 /* CEO Message Section */
 
 #ceo-message-con {
     height: 827px;
+    margin-top: -110px;
 }
 
 #ceo-message h3 {
@@ -532,12 +548,6 @@ button {
     width: 75px;
 }
 
-/* #prev-btn:hover,
-#next-btn:hover {
-    background-color: #CC173A;
-    color: #fff;
-} */
-
 /* Merch Section */
 
 #merch-header {
@@ -562,7 +572,7 @@ button {
 
 .merch p {
     width: 140px;
-    padding-right: 50px;
+    padding: 15px 20px 10px 0;
 }
 
 .merch button {
@@ -573,7 +583,7 @@ button {
 }
 
 #merch-con {
-    height: 852px;
+    height:100px;
     text-align: center;
 }
 
@@ -591,6 +601,19 @@ button {
 .merch-title {
     max-width: 110px;
     padding-left: 10px;
+}
+
+.merch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.merch img:nth-child(2) {
+    margin-top: 20px;
+    margin-right: 30px;
 }
 
 /* Available Stores Section */
@@ -738,26 +761,23 @@ button {
 .product-style{
     height: 400px;
     padding-top: 50px;
-
 }
-
 
 .info-button {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 120%;
-    border-width: 0; /* Remove the border stroke */
-    background-color: white; /* Set the background color to achieve solid color */
+    border-width: 0;
+    background-color: white;
     border-radius: 40px;
     color: #363636;
     display: block;
-    margin-top: 10px; /* Adjust this value as needed */
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
     width: 150px;
 }
-
 
 #blueberry-image, #strawberry-image, #apple-image, #orange-image {
     display: flex;
@@ -767,27 +787,25 @@ button {
 
 #blueberry-info, #strawberry-info, #apple-info, #peachy-burst-info {
     text-align: center;
-    
 }
 
-
 #blueberry-info > .product-page-name {
-    width: 240px;
+    width: 210px;
     margin-top: 10px;
 }
 
 #strawberry-info > .product-page-name {
-    width: 240px;
+    width: 210px;
     margin-top: 10px;
 }
 
 #apple-info > .product-page-name {
-    width: 240px;
+    width: 210px;
     margin-top: 10px;
 }
 
 #peachy-burst-info > .product-page-name {
-    width: 240px;
+    width: 210px;
     margin-top: 10px;
 }
 
@@ -796,67 +814,89 @@ button {
     margin-top: 30px;
 }
 
-
-
 #product-grape {
-    background-color: rgb(114, 29, 195);
-    height: 800px;
+    background-image: url(../images/purple_bgp_412.png);
+    background-size: cover;
+    background-color: #941ED6;
+    height: 749px;
     display: block;
     justify-content: center;
 }
 
 #product-strawberry {
+    background-image: url(../images/red_bgp_412.png);
+    background-size: cover;
     background-color: #CC173A;
-    height: 800px;
+    height: 749px;
     display: block;
     justify-content: center;
 }
 
-
 #product-apple {
+    background-image: url(../images/green_bgp_412.png);
+    background-size: cover;
     background-color: #329B13;
-    height: 800px;
+    height: 749px;
     display: block;
     justify-content: center;
 }
 
 #product-orange {
+    background-image: url(../images/orange_bgp_412.png);
+    background-size: cover;
     background-color:#F26200;
-    height: 800px;
+    height: 749px;
     display: block;
     justify-content: center;
 }
 
+/* Gallery Section */
 
-/* CONTACT PAGE */
-
-#logo-contact img {
-    width: 300px;
-}
-
-#subtitle-contact {
+#follow-us-prod {
+    height: 350px;
     text-align: center;
 }
 
-#product-strawberry-apple img {
-    width: 200px;
+#follow-us-text-prod {
+    background-color: #CC173A;
+    text-align: center;
+    border-radius: 10px;
+    width: 319px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 60px;
 }
 
-#product-grape-orange img {
-    width: 200px;
+#follow-us-text-prod h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
 }
+
+#gallery-prod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -40px;
+  }
+
+
+/* CONTACT PAGE */
 
 #hero-banner-contact {
-    background-color: rgb(106, 29, 179);
-    height: 300px;
+    background-image: url(../images/contact_header_412.png);
+    background-size: cover;
+    background-color: #941ED6;
+    height: 309px;
     display: flex;
     justify-content: center;
 }
 
-
 #contact-form-con {
     background-size: cover;
-    /* height: 600px; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -896,17 +936,18 @@ color: #363636;
     margin-bottom: 30px;
     font: inherit;
     width: 60%;
-    color: #363636; /* Adjust text color */
+    color: #363636;
 }
 
 #contact-form-con input::placeholder,
 #contact-form-con textarea::placeholder {
-    color: #AF77DB; /* Adjust placeholder color */
+    color: #363636;
     padding-left: 5px;
 }
 
 #contact-form-con textarea {
     height: 200px;
+    width: 340px;
 }
 
 #contact-form-con input[type="submit"] {
@@ -916,7 +957,7 @@ color: #363636;
     border: none;
     transition: all 200ms ease-in;
     width: 150px;
-    align-self: flex-end;
+    align-self: center;
 }
 
 #contact-form-con input[type="submit"]:hover {
@@ -935,159 +976,463 @@ color: #363636;
     margin-right: 10px;
 }
 
+/* Gallery Section */
+
+#follow-us-contact {
+    height: 350px;
+    text-align: center;
+}
+
+#follow-us-text-contact {
+    background-color: #CC173A;
+    text-align: center;
+    border-radius: 10px;
+    width: 319px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+#follow-us-text-contact h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+}
+
+#gallery-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TABLET MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
+
     body {
         max-width: 768px;
         margin: 0 auto;
     }
-
-    .hero-home {
-        background-image: url('../images/home_header_768.png');
-        height: 284px;
-    }
-
-    #features {
-        height: 249px;
-        margin-top: 45px;
-        margin-bottom: 60px;
-    }
-
-    #features h3 {
-        font-size: 25px;
-    }
     
-    #features p {
-        font-size: 17px;
-        font-weight: 800;
-    }
-
-    #about-quatro {
-        height: 285px;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 30px;
-    }
-
-    #about-quatro h3 {
-        font-size: 35px;
-    }
-    
-    #about-quatro p {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 27px;
-    }
-
-    #about-quatro img {
-        width: 194px;
-    }
-
-    #product-title {
-        background-image: url('../images/drinks_bg_768.png');
-    }
-
-    #quote {
-        background-image: url('../images/quote_bg_768.png');
-    }
-        
-    #reviews-con {
-        position: relative; 
-        background-image: url('../images/review_bg_768.png');
-    }
-
-    #newsletter-con {
-        background-image: url('../images/news_bg_768.png');
-    }
-
-    #quatro-history {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #quatro-history img {
-        width: 194px;
-    }
-
-
-
-/* PRODUCT */
-
-#blueberry-info,
-    #strawberry-info,
-    #apple-info,
-    #peachy-burst-info {
-        flex-direction: row;
-        justify-content: center;
-        width: 412px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-
-/* CUSTOMER REVIEW SECTION */
-
-    #reviews article {
-        background-color: white;
-        border-radius: 15px;
-        width: 200px; 
-        flex-shrink: 0;
-        /* height: 226px; */
-        margin: 0 10px 0 10px; /* Reset margin */
-        padding: 10px;
-    }
-
-/* HEADER MENU NAV */
-
     #logo img {
-        width: 200px;
-        padding-left: 10px;
+        width: 225px;
+        margin: 20px 0 0 10px;
     }
 
     #main-nav label img {
-    display: none;
+        display: none;
     }
 
     #burger-con {
-        display:contents;
+        display: contents;
      }
 
      #main-nav {
         position: absolute;
-        left: 270px;
+        left: 360px;
         top: -10px;
         width: 450px;
      }
 
-     #main-nav ul{
-        background-color: #651799;
-     }
-
-     #main-nav ul li {
-        display: inline;
-     }
+     #main-nav ul {
+        background: none;
+    }
 
     #main-nav ul li {
         display: inline-block;
         margin: 0 15px;
     }
-
-/* FOOTER NAV */
-
-    #footer-nav {
-    display: block;
-    margin-top: 40px;
-    padding-top: 0;
-    margin-bottom: 0;
-    margin-left: 50px;
-    column-count: 2;
+    
+    .hero-home {
+        background-image: url('../images/home_header_768.png');
+        height: 284px;
+    }
+    
+    #features {
+        height: 249px;
+        margin-top: 40px;
+    }
+    
+    .feature_icon {
+        width: 105px;
+        height: 105px;
+        margin-bottom: 8px;
+    }
+    
+    #features h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        max-width: 200px;
+        margin-top: 25px;
+        margin-bottom: 1px;
+    }
+    
+    #features p {
+        font-size: 17px;
+        width: 200px;
+        line-height: 20px;
+    }
+    
+    #about-quatro {
+        height: 285px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px 20px 40px;
+    }
+    
+    #about-quatro h3 {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+    
+    #about-quatro p {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
     }
 
-    #footer-info {
+    #about-quatro img {
+        padding-top: 40px;
+        width: 194px;
+    }
+    
+    #product-title {
+        background-image: url('../images/drinks_bg_768.png');;
+        height: 136px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    #product-title h3 {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    
+    #product-title p {
+        font-size: 28px;
+        margin-top: -60px;
+    }
+    
+    .product p {
+        font-size: 15px;
+        width: 200px;
+    }
+    
+    #products {
+        padding-top: 25px;
+    }
+    
+    #quatro-history {
+        height: 260px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px 20px 40px;
+    }
+    
+    #quatro-history h3 {
+        font-size: 42px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+    
+    #quatro-history p {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    #quatro-history img {
+        padding-top: 40px;
+        width: 194px;
+    }
+
+    #quote {
+        background-image: url('../images/quote_bg_768.png');
+        height: 248px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    
+    #quote h3 {
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 53px;
+        
+        margin-left: -30px;
+        margin-top: 40px;
+        max-width: 600px;
+    }
+    
+    #quote p {
+        font-weight: 700;
+        font-size: 22px;
+        margin-left: -30px;
+        margin-top: -25px;
+        margin-bottom: 500px;
+    }
+    
+    #follow-us {
+        height: 732px;
+    }
+    
+    #follow-us-text {
+        border-radius: 10px;
+        width: 638px;
+        height: 87px;
+
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    #follow-us-text h2 {
+        font-size: 49px;
+    }
+    
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -200px;
+      }
+    
+    #ceo-message-con {
+        height: 900px;
+        text-align: center;
+        margin-top: -200px;
+    }
+    
+    #ceo-message h3 {
+        font-size: 35px;
+        letter-spacing: 2px;
+      }
+    
+    #ceo-message p {
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 15;
+      }
+    
+    #ceo-message h4 {
+        font-weight: 800;
+        font-size: 23px;
+        margin-bottom: -160px;
+    }
+
+    #ceo-message h4 br {
+        display: none;
+    }
+    
+    #video {
+        width: 1920px;
+        height: 1px;
+        display: flex;
+        margin-left: 90px;
+        margin-bottom: -100px;
+    }
+
+    #reviews-title h2 {
+        font-size: 51px;
+        font-weight: 700;
+        margin-bottom: -30px;
+        margin-top: 30px;
+    }
+    
+    #reviews-title p {
+        font-weight: 700;
+        font-size: 29px;
+        margin-top: 20px;
+    }
+
+    #reviews-con {
+        background-image: url('../images/review_bg_768.png');
+        height: 587px;
+        margin-top: -30px;
+    }
+
+    #reviews article {
+        border-radius: 15px;
+        width: 264px; 
+        height: 310px;
+        margin: 0 10px 0 10px;
+        padding: 10px;
+    }
+    
+    #reviews article p {
+        font-weight: 700;
+        font-size: 17.5px;
+        line-height: 34px;
+        margin: 25px 10px 0 20px;
+    }
+    
+    #reviews img {
+        width: 175px;
+        margin-top: 10px;
+        margin: 25px 10px 0 20px;
+    }
+    
+    #reviews article h3 {
+        letter-spacing: 1px;
+        font-size: 30px;
+        margin-top: 5px;
+        margin: 25px 10px 0 20px;
+    }
+
+    #reviews {
+        margin-left: -60px;
+    }
+
+    #slider-buttons {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #prev-btn, #next-btn {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border-radius: 100px;
+        font-weight: 700;
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    #merch-header {
+        border-radius: 10px;
+        width: 603px;
+        height: 93px;
+        margin-top: 50px;
+    }
+
+    #merch-header h2 {
+        font-size: 52px;
+    }
+
+    #merch-con {
+        height: 535px;
+    }
+
+    #merch-box {
+        margin-top: -370px;
+    }
+    
+    .merch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .merch img:nth-child(2) {
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+
+    .merch p {
+        margin: 20px 0 10px 30px;
+    }
+
+    #available-con {
+        text-align: center;
+        height: 275px;
+        margin-top: 20px;
+      }
+    
+    #available-title {
+        font-size: 37px;
+        letter-spacing: 2px;
+    }
+    
+    #store_logos {
+        width: 225px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 70px;
+    }
+    
+    #store_logos img {
+        margin-top: -100px;
+        margin-left: 30px;
+    }
+    
+    #newsletter-con {
+        background-image: url('../images/news_bg_768.png');
+        height: 275px;
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+    }
+    
+    #newsletter-con form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -140px;
+    }
+    
+    #newsletter-con h3 {
+        font-size: 45px;
+        line-height: 54px;
+        margin: 40px 0 25px -20px;
+        max-width: 600px;
+    }
+    
+    #newsletter_box input {
+        width: 472px;
+        height: 35px;
+    }
+
+    #footer-nav ul,
+    #footer-service ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    #footer-nav {
         display: block;
+        margin-top: 40px;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-left: 50px;
+        column-count: 2;
     }
 
     #footer-nav ul {
@@ -1096,54 +1441,679 @@ color: #363636;
         margin-top: 0;
     }
 
-    #footer-nav ul li a:hover {
-        text-decoration: underline;
-    }
-    
     #logo-socmed {
-        margin-left: 40px;   
+        margin-left: 45px; 
     }
 
     #footer-info {
         display: block;
         margin-left: 40px;
     }
+
+/* PRODUCT PAGE */
+
+.product-style{
+    height: 400px;
+    padding-top: 50px;
+    margin-left: -390px;
 }
+
+.info-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 120%;
+    border-width: 0;
+    background-color: white;
+    border-radius: 40px;
+    color: #363636;
+    display: block;
+    margin-left: 450px;
+    margin-top: -70px;
+    padding: 10px;
+    width: 150px;
+}
+
+#blueberry-image, #strawberry-image, #apple-image, #orange-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blueberry-info, #strawberry-info, #apple-info, #peachy-burst-info {
+    text-align: center;
+}
+
+#blueberry-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#strawberry-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#apple-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#peachy-burst-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#blueberry-info img, #strawberry-info img, #apple-info img, #peachy-burst-info img {
+    display: none;
+}
+
+.quatro_logo_wcolor {
+    width: 200px;
+    margin-top: 30px;
+}
+
+#product-grape {
+    background-image: url(../images/purple_bgp_768.png);
+    background-size: cover;
+    background-color: #941ED6;
+    height: 555px;
+    display: block;
+    justify-content: center;
+}
+
+#product-strawberry {
+    background-image: url(../images/red_bgp_768.png);
+    background-size: cover;
+    background-color: #CC173A;
+    height: 555px;
+    display: block;
+    justify-content: center;
+}
+
+#product-apple {
+    background-image: url(../images/green_bgp_768.png);
+    background-size: cover;
+    background-color: #329B13;
+    height: 555px;
+    display: block;
+    justify-content: center;
+}
+
+#product-orange {
+    background-image: url(../images/orange_bgp_768.png);
+    background-size: cover;
+    background-color:#F26200;
+    height: 555px;
+    display: block;
+    justify-content: center;
+}
+
+#follow-us-prod {
+    height: 500px;
+}
+
+#follow-us-text-prod {
+    border-radius: 10px;
+    width: 638px;
+    height: 87px;
+
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+#follow-us-text-prod h2 {
+    font-size: 49px;
+}
+
+#gallery-prod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -60px;
+  }
+
+
+/* CONTACT PAGE */
+
+#hero-banner-contact {
+    background-image: url(../images/contact_header_768.png);
+    background-size: cover;
+    background-color: #941ED6;
+    height: 295px;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form-con {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-form-con form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form-con h3 {
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin-left: 15px;
+    margin-top: 50px;
+    color: #941ED6;
+    max-width: 480px;
+    margin-bottom: 25px;
+    font-family: "Stopbuck", sans-serif;
+    letter-spacing: 1px;
+}
+#contact-form-con p {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+color: #363636;
+
+}
+#contact-form-con input,
+#contact-form-con textarea {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font: inherit;
+    width: 60%;
+    color: #363636;
+}
+
+#contact-form-con input::placeholder,
+#contact-form-con textarea::placeholder {
+    color: #363636;
+    padding-left: 5px;
+}
+
+#contact-form-con textarea {
+    height: 200px;
+    width: 450px;
+}
+
+#contact-form-con input[type="submit"] {
+    padding: 12px 28px;
+    background: #721AAE;
+    color: #fff;
+    border: none;
+    transition: all 200ms ease-in;
+    width: 150px;
+    align-self: left;
+}
+
+#contact-form-con input[type="submit"]:hover {
+    background-color: #A44CE1;
+    border-radius: 0;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#follow-us-contact {
+    height: 500px;
+}
+
+#follow-us-text-contact {
+    border-radius: 10px;
+    width: 638px;
+    height: 87px;
+
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#follow-us-text-contact h2 {
+    font-size: 49px;
+}
+
+#gallery-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* DESKTOP MEDIA QUERIES */
 
 @media screen and (min-width: 1200px) {
+
     body {
         max-width: 1200px;
-        margin: 0 auto; /* Center content */
+    }
+    
+    #logo img {
+        width: 240px;
+        margin: 20px 0 0 15px;
     }
 
-    .hero-home {
-        background-image: url('../images/home_header_1200.png');
+    #main-nav label img {
+        display: none;
+    }
+
+    #burger-con {
+        display: contents;
+     }
+
+     #main-nav {
+        position: absolute;
+        left: 730px;
+        top: -10px;
+        width: 450px;
+     }
+
+     #main-nav ul {
+        background: none;
+    }
+
+    #main-nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 20px;
     }
 
     #main-nav ul li a:hover {
         text-decoration: underline;
     }
+    
+    .hero-home {
+        background-image: url('../images/home_header_1200.png');
+        height: 463px;
+    }
+    
+    #features {
+        height: 249px;
+        margin-top: 40px;
+    }
+    
+    .feature_icon {
+        width: 105px;
+        height: 105px;
+        margin-bottom: 8px;
+    }
+    
+    #features h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        max-width: 200px;
+        margin-top: 25px;
+        margin-bottom: 1px;
+    }
+    
+    #features p {
+        font-size: 17px;
+        width: 200px;
+        line-height: 20px;
+    }
+    
+    #about-quatro {
+        height: 320px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 50px 20px 50px;
+    }
+    
+    #about-quatro h3 {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+    
+    #about-quatro p {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 41px;
+    }
 
-    /* CUSTOMER REVIEW SECTION */
+    #about-quatro img {
+        padding-top: 40px;
+        width: 250px;
+    }
+    
+    #product-title {
+        background-image: url('../images/drinks_bg_1200.png');;
+        height: 136px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    #product-title h3 {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    
+    #product-title p {
+        font-size: 28px;
+        margin-top: -60px;
+    }
+    
+    .product p {
+        font-size: 15px;
+        width: 200px;
+    }
+    
+    #products {
+        padding-top: 25px;
+    }
+    
+    #quatro-history {
+        height: 320px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px 20px 40px;
+    }
+    
+    #quatro-history h3 {
+        font-size: 50px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+    
+    #quatro-history p {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 41px;
+    }
+
+    #quatro-history img {
+        padding-top: 40px;
+        width: 250px;
+    }
+
+    #quote {
+        background-image: url('../images/quote_bg_1200.png');
+        height: 248px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    
+    #quote h3 {
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 53px;
+        
+        margin-left: -30px;
+        margin-top: 40px;
+        max-width: 600px;
+    }
+    
+    #quote p {
+        font-weight: 700;
+        font-size: 22px;
+        margin-left: -30px;
+        margin-top: -25px;
+        margin-bottom: 500px;
+    }
+    
+    #follow-us {
+        height: 732px;
+    }
+    
+    #follow-us-text {
+        border-radius: 10px;
+        width: 638px;
+        height: 87px;
+
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+    
+    #follow-us-text h2 {
+        font-size: 49px;
+    }
+    
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: -200px;
+      }
+    
+    #ceo-message-con {
+        height: 1000px;
+        text-align: center;
+        margin-top: -20px;
+    }
+    
+    #ceo-message h3 {
+        font-size: 50px;
+        letter-spacing: 2px;
+      }
+    
+    #ceo-message p {
+        font-weight: 700;
+        line-height: 40px;
+        font-size: 20px;
+      }
+    
+    #ceo-message h4 {
+        font-weight: 800;
+        font-size: 28px;
+        margin-bottom: -160px;
+    }
+
+    #ceo-message h4 br {
+        display: none;
+    }
+    
+    #video {
+        width: 100%;
+        display: flex;
+        margin-left: 106px;
+        margin-bottom: -70px;
+    }
+
+    #reviews-title h2 {
+        font-size: 51px;
+        font-weight: 700;
+        margin-bottom: -30px;
+        margin-top: 30px;
+    }
+    
+    #reviews-title p {
+        font-weight: 700;
+        font-size: 29px;
+        margin-top: 20px;
+    }
+
+    #reviews-con {
+        background-image: url('../images/review_bg_1200.png');
+        height: 587px;
+        margin-top: -60px;
+    }
+
+    #reviews article {
+        border-radius: 15px;
+        width: 264px; 
+        height: 310px;
+        margin: 90px 10px 0 10px;
+        padding: 10px;
+    }
+    
+    #reviews article p {
+        font-weight: 700;
+        font-size: 17.5px;
+        line-height: 34px;
+        margin: 25px 10px 0 20px;
+    }
+    
+    #reviews img {
+        width: 175px;
+        margin-top: 10px;
+        margin: 25px 10px 0 20px;
+    }
+    
+    #reviews article h3 {
+        letter-spacing: 1px;
+        font-size: 30px;
+        margin-top: 5px;
+        margin: 25px 10px 0 20px;
+    }
+
+    #reviews {
+        margin-left: -160px;
+    }
 
     #slider-buttons {
         display: none;
     }
 
-    /* HEADER MENU NAV */
+    #prev-btn, #next-btn {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border-radius: 100px;
+        font-weight: 700;
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    #merch-header {
+        border-radius: 10px;
+        width: 603px;
+        height: 93px;
+        margin-top: 50px;
+    }
 
-    #main-nav {
-        position: absolute;
-        left: 670px;
-        top: -10px;
-        width: 450px;
-     }
+    #merch-header h2 {
+        font-size: 52px;
+    }
 
-    /* FOOTER NAV */
+    #merch-con {
+        height: 535px;
+    }
 
+    #merch-box {
+        margin-top: -370px;
+    }
+    
+    .merch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .merch img:nth-child(2) {
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+
+    .merch p {
+        margin: 20px 0 10px 20px;
+    }
+
+    #available-con {
+        text-align: center;
+        height: 275px;
+        margin-top: 20px;
+      }
+    
+    #available-title {
+        font-size: 37px;
+        letter-spacing: 2px;
+    }
+    
+    #store_logos {
+        width: 225px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 70px;
+    }
+    
+    #store_logos img {
+        margin-top: -100px;
+        margin-left: 30px;
+    }
+    
+    #newsletter-con {
+        background-image: url('../images/news_bg_1200.png');
+        height: 275px;
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+    }
+    
+    #newsletter-con form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -140px;
+    }
+    
+    #newsletter-con h3 {
+        font-size: 45px;
+        line-height: 54px;
+        margin: 40px 0 25px -20px;
+        max-width: 600px;
+    }
+    
+    #newsletter_box input {
+        width: 472px;
+        height: 35px;
+    }
+
+    #footer-nav ul,
+    #footer-service ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    #footer-nav {
+        display: block;
+        margin-top: 40px;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-left: 50px;
+        column-count: 2;
+    }
+
+    #footer-nav ul {
+        width: 200px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #logo-socmed {
+        margin-left: 45px; 
+    }
+
+    #footer-info {
+        display: block;
+        margin-left: 40px;
+    }
+    
     #footer-info {
         display: block;
         margin-left: 60px;
@@ -1162,20 +2132,241 @@ color: #363636;
         margin-left: -180px;;
     }
 
-    #product-title {
-        background-image: url('../images/drinks_bg_1200.png');
-    }
+/* PRODUCT PAGE */
 
-    #quote {
-        background-image: url('../images/quote_bg_1200.png');
-    }
-        
-    #reviews-con {
-        position: relative; 
-        background-image: url('../images/review_bg_1200.png');
-    }
-
-    #newsletter-con {
-        background-image: url('../images/news_bg_1200.png');
+.product-style{
+    height: 700px;
+    padding-top: 120px;
+    margin-left: -600px;
 }
+
+.info-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 200%;
+    border-width: 0;
+    background-color: white;
+    border-radius: 40px;
+    color: #363636;
+    display: block;
+    margin-left: 730px;
+    margin-top: -160px;
+    padding: 10px;
+    width: 250px;
+}
+
+#blueberry-image, #strawberry-image, #apple-image, #orange-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blueberry-info, #strawberry-info, #apple-info, #peachy-burst-info {
+    text-align: center;
+}
+
+#blueberry-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#strawberry-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#apple-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#peachy-burst-info > .product-page-name {
+    width: 210px;
+    margin-top: 10px;
+}
+
+#blueberry-info img, #strawberry-info img, #apple-info img, #peachy-burst-info img {
+    display: none;
+}
+
+.quatro_logo_wcolor {
+    width: 200px;
+    margin-top: 30px;
+}
+
+#product-grape {
+    background-image: url(../images/purple_bgp_1200.png);
+    background-size: cover;
+    background-color: #941ED6;
+    height: 949px;
+    display: block;
+    justify-content: center;
+}
+
+#product-strawberry {
+    background-image: url(../images/red_bgp_1200.png);
+    background-size: cover;
+    background-color: #CC173A;
+    height: 949px;
+    display: block;
+    justify-content: center;
+}
+
+#product-apple {
+    background-image: url(../images/green_bgp_1200.png);
+    background-size: cover;
+    background-color: #329B13;
+    height: 949px;
+    display: block;
+    justify-content: center;
+}
+
+#product-orange {
+    background-image: url(../images/orange_bgp_1200.png);
+    background-size: cover;
+    background-color:#F26200;
+    height: 949px;
+    display: block;
+    justify-content: center;
+}
+
+#follow-us-prod {
+    height: 550px;
+}
+
+#follow-us-text-prod {
+    border-radius: 10px;
+    width: 638px;
+    height: 87px;
+
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+#follow-us-text-prod h2 {
+    font-size: 49px;
+}
+
+#gallery-prod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  /* CONTACT PAGE */
+
+#hero-banner-contact {
+    background-image: url(../images/contact_header_1200.png);
+    background-size: cover;
+    background-color: #941ED6;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form-con {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-form-con form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form-con h3 {
+    font-weight: 800;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 48px;
+    margin-left: 15px;
+    margin-top: 50px;
+    color: #941ED6;
+    max-width: 1200px;
+    margin-bottom: 25px;
+    font-family: "Stopbuck", sans-serif;
+    letter-spacing: 1px;
+}
+#contact-form-con p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #363636;
+    font-size: 20px;
+}
+#contact-form-con input,
+#contact-form-con textarea {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font: inherit;
+    width: 60%;
+    color: #363636;
+}
+
+#contact-form-con input::placeholder,
+#contact-form-con textarea::placeholder {
+    color: #363636;
+    padding-left: 5px;
+}
+
+#contact-form-con textarea {
+    height: 200px;
+    width: 450px;
+}
+
+#contact-form-con input[type="submit"] {
+    padding: 12px 28px;
+    background: #721AAE;
+    color: #fff;
+    border: none;
+    transition: all 200ms ease-in;
+    width: 150px;
+    align-self: left;
+}
+
+#contact-form-con input[type="submit"]:hover {
+    background-color: #A44CE1;
+    border-radius: 0;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#follow-us-contact {
+    height: 550px;
+}
+
+#follow-us-text-contact {
+    border-radius: 10px;
+    width: 638px;
+    height: 87px;
+
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+#follow-us-text-contact h2 {
+    font-size: 49px;
+}
+
+#gallery-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
